@@ -1,0 +1,59 @@
+CREATE TABLE t1(x, y);
+  PRAGMA journal_mode = wal;
+  INSERT INTO t1 VALUES(1, 2);
+  INSERT INTO t1 VALUES(3, 4);
+  INSERT INTO t1 VALUES(5, 6);
+  INSERT INTO t1 VALUES(7, 8);
+
+SELECT * FROM t1
+
+BEGIN;
+    INSERT INTO t1 VALUES(9, 10);
+
+SELECT * FROM t1
+
+COMMIT 
+SELECT * FROM t1
+
+PRAGMA wal_checkpoint = TRUNCATE
+
+PRAGMA journal_mode = wal;
+      CREATE TABLE t1(s, v);
+      INSERT INTO t1 VALUES(1, 2);
+      INSERT INTO t1 VALUES(3, 4);
+      INSERT INTO t1 VALUES(5, 6);
+    
+BEGIN;
+        INSERT INTO t1 VALUES(7, 8);
+    
+COMMIT 
+SELECT * FROM t1 
+BEGIN;
+        INSERT INTO t1 VALUES(9, 10);
+    
+COMMIT;
+      BEGIN;
+        SELECT * FROM t1;
+    
+INSERT INTO t1 VALUES(11, 12);
+    
+COMMIT;
+      BEGIN;
+        SELECT * FROM t1;
+    
+INSERT INTO t1 VALUES(13, 14);
+    
+BEGIN;
+        SELECT * FROM t1;
+    
+INSERT INTO t1 VALUES(15, 16); 
+COMMIT;
+      BEGIN;
+        SELECT * FROM t1;
+    
+INSERT INTO t1 VALUES(17, 18); 
+PRAGMA journal_mode = wal;
+  CREATE TABLE x1(x, y);
+  BEGIN;
+    INSERT INTO x1 VALUES(1, 2);
+

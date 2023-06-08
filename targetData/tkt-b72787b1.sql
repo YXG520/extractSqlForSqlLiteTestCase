@@ -1,0 +1,2 @@
+db eval {CREATE TABLE IF NOT EXISTS t4(q)
+SELECT max(x) FROM t1

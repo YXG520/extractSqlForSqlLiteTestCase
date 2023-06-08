@@ -1,0 +1,75 @@
+
+CREATE TABLE %s(a int, b text)
+INSERT INTO xyz VALUES(1,'%q')
+  
+
+BEGIN TRANSACTION;
+    SELECT * FROM xyz WHERE b='%q'
+  
+SELECT * FROM xyz
+  
+SELECT * FROM xyz ORDER BY a
+  
+SELECT * FROM xyz  WHERE a>49 ORDER BY a
+  
+SELECT * FROM xyz WHERE a>47 ORDER BY a
+  
+SELECT * FROM xyz WHERE a>47 ORDER BY a; invalid
+  
+SELECT * FROM xyz WHERE a>47 ORDER BY a
+  
+INSERT INTO xyz VALUES(51,'%q')
+  
+SELECT * FROM xyz WHERE a>49 ORDER BY a;
+  
+INSERT INTO xyz VALUES(52,NULL)
+  
+SELECT * FROM xyz WHERE a IN (42,50,52) ORDER BY a DESC
+    
+SELECT * FROM xyz WHERE a=42 OR a=50 OR a=52 ORDER BY a DESC
+    
+SELECT * FROM xyz WHERE a>1000
+  
+ROLLBACK;
+    PRAGMA empty_result_callbacks = ON;
+    SELECT * FROM xyz WHERE b='%q'
+  
+SELECT * FROM xyz
+  
+SELECT * FROM xyz ORDER BY a
+  
+SELECT * FROM xyz  WHERE a>49 ORDER BY a
+  
+SELECT * FROM xyz WHERE a>47 ORDER BY a
+  
+INSERT INTO xyz VALUES(51,'%q')
+  
+SELECT * FROM xyz WHERE a>49 ORDER BY a;
+  
+INSERT INTO xyz VALUES(52,NULL)
+  
+SELECT * FROM xyz WHERE a IN (42,50,52) ORDER BY a DESC
+    
+SELECT * FROM xyz WHERE a=42 OR a=50 OR a=52 ORDER BY a DESC
+    
+SELECT * FROM xyz WHERE a>1000
+  
+SELECT * FROM xyz;  SELECT * FROM sqlite_master
+    
+sep
+
+sep
+
+
+$i+1000
+
+
+
+DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a,b);
+  INSERT INTO t1 VALUES(1,2);
+  INSERT INTO t1 VALUES(3,4);
+  INSERT INTO t1 SELECT a+4, b+4 FROM t1;
+  INSERT INTO t1 SELECT a+8, b+8 FROM t1;
+
+

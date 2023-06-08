@@ -1,0 +1,8 @@
+CREATE TABLE t1(x, y); 
+INSERT INTO t1 VALUES(1, 2) 
+BEGIN;
+      DROP TABLE t1;
+      CREATE TABLE t1(x, y);
+    ROLLBACK;
+  
+INSERT INTO t1 VALUES(1, 2) 

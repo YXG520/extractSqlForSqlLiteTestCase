@@ -1,0 +1,11 @@
+CREATE TABLE t1(a, b);
+  CREATE TABLE t2(c, d NOT NULL);
+
+SELECT * FROM t2 WHERE d NOT NULL
+  
+CREATE TABLE t1(a, b, c); 
+  CREATE TABLE t2(a, b, c, PRIMARY KEY(a, b, c)) WITHOUT ROWID;
+
+SELECT dense_rank() OVER win FROM t2
+    WINDOW win AS (ORDER BY c IS NULL)
+  
