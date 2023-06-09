@@ -1,2 +1,0 @@
-DETACH x IS #1;
-

@@ -17,7 +17,7 @@ filepath2numSQLs = defaultdict(int)
 # total sql files
 num_sql_files = 0
 
-def handleSingleFile(file_path, filename):
+def handleSingleFile(file_path):
     # 读取文件内容
     with open(file_path, 'r', encoding='utf-8') as file:
         file_content = file.read()
@@ -69,19 +69,18 @@ def handleSingleFile(file_path, filename):
                 id = id_.split(".")[0]
             else:
                 id = id_[0]
-            if not id.isdigit():
-                num = 10/0
             # # print(f"第{id}组数据")
             sql_group_dict[id].append(extract_sql_statements(sql[0]+sql[1]))
             # print(f"收集到第 {id} 组数据 {sql[0]+sql[1]}, 现在该组数据为{sql_group_dict[id]}")
             index += 1
     except Exception:
-        # print(f'发生异常的id值是{id}')
-        # print(f'解析文件{file_path}的sql语句时发生异常！！！')
-        global cnt_err_file
-        cnt_err_file += 1
-        err_filesMap[filename].append("解析时错误！")
-
+            # print(f'解析文件{file_path}的sql语句时发生异常！！！')
+            global cnt_err_file
+            cnt_err_file += 1
+            err_filesMap[file_path].append("解析时错误")
+    filepath2numSQLs[file_path] = len(sql_statements)
+    global num_sql_files
+    num_sql_files += len(sql_statements)
     return sql_group_dict
 
 def extract_sql_statements(text):
@@ -157,20 +156,14 @@ def extract_sql_statements(text):
 
     return res
 
-def write_to_txt(sql_statements, output_file, filename):
+def write_to_txt(sql_statements, output_file):
     # 写入到txt文件
-    global num_sql_files
-    try:
-        for k, sql_list in sql_statements.items():
-            # 为每一个键值对写一个.sql文件
-            with open(output_file+"-"+k+".sql", 'w', encoding='utf-8') as file:
-                for sql in sql_list:
-                    file.write(sql + '\n')
-                num_sql_files += 1
-                filepath2numSQLs[filename] += 1
+    for k, sql_list in sql_statements.items():
+        # 为每一个键值对写一个.sql文件
+        with open(output_file+"-"+k+".sql", 'w', encoding='utf-8') as file:
+            for sql in sql_list:
+                file.write(sql + '\n')
 
-    except Exception:
-        err_filesMap[filename].append("写入时发生错误！")
 # 指定目录
 def read_from_directory(directory):
     # 遍历目录下的文件
@@ -186,40 +179,25 @@ def read_from_directory(directory):
             filepath = os.path.join(directory, filename)
 
             # 读取并打印文件内容
-            # try:
-            SQLs = handleSingleFile(filepath, filename)
-
+            SQLs = handleSingleFile(filepath)
             target_file_path = "targetData/"+filename.replace(".test", "")
             # 写入sql文件
-            # try:
-            write_to_txt(SQLs, target_file_path,filename)
-
-
-
-def remove_err_files(directory, err_files_map):
-    file_list = os.listdir(directory)
-    for fn in file_list:
-        prefix = fn.split("-")[0]
-        # print(f'prefix is {prefix}...')
-        if prefix in err_files_map:
-            file_path = os.path.join(directory, fn)  # 构建文件路径
-            os.remove(file_path)
-            print(f'deleting file {file_path}')
+            try:
+                write_to_txt(SQLs, target_file_path)
+            except Exception:
+                err_filesMap[filepath].append("写入时发生错误！")
+        # break
 
 if __name__ == '__main__':
 
-    directory = "C:/Users/yxg/Desktop/科研/sqlite/test"
+    # directory = "C:/Users/yxg/Desktop/科研/sqlite/test"
     # directory = "source_data"
-    # directory = "source_data/test_data"
+    directory = "source_data/test_data"
     # directory = "source_data/"
     read_from_directory(directory)
-    print(f'the total source files are {total_file}...\n')
+    print(f'the total files are {total_file}...\n')
     print(f'the total sql files are {num_sql_files}...\n ')
-    print(f'the dict showing the sql file number corresponding to each file are as follow...\n')
-    print(filepath2numSQLs)
-    print(f'\nthe files encountering errors are {len(err_filesMap)}, and now printing the err list files:\n')
+    print(f'the dict showing the sql file number corresponding to each file are as follow...')
+    print(f'the files encountering errors are {len(err_filesMap)}, and now printing the err list files:\n')
     print(err_filesMap)
-    print(f'\nSQL statements have been successfully extracted and saved to the specific directory ...')
-
-    # print("\n now deleting all err sql files produced....\n")
-    # remove_err_files("targetData", err_filesMap)
+    print(f'SQL statements have been successfully extracted and saved to the specific directory ...')

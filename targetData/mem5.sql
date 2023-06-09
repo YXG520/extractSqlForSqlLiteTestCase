@@ -1,3 +1,0 @@
-finish_test
-  return
-
