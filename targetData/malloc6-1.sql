@@ -1,0 +1,5 @@
+
+
+    error "out of memory"
+  
+

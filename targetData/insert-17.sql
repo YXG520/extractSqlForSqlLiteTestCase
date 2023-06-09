@@ -1,0 +1,87 @@
+
+
+  PRAGMA temp.recursive_triggers = true;
+  DROP TABLE IF EXISTS t0;
+  CREATE TABLE t0(aa, bb);
+  CREATE UNIQUE INDEX t0bb ON t0(bb);
+  CREATE TRIGGER "r17.1" BEFORE DELETE ON t0
+    BEGIN INSERT INTO t0(aa,bb) VALUES(99,1);
+  END;
+  INSERT INTO t0(aa,bb) VALUES(10,20);
+  REPLACE INTO t0(aa,bb) VALUES(30,20);
+
+
+
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a, b UNIQUE, c UNIQUE);
+  INSERT INTO t1(a,b,c) VALUES(1,1,1),(2,2,2),(3,3,3),(4,4,4);
+  CREATE TRIGGER "r17.3" AFTER DELETE ON t1 WHEN OLD.c<>3 BEGIN
+    INSERT INTO t1(rowid,a,b,c) VALUES(100,100,100,3);
+  END;
+  REPLACE INTO t1(rowid,a,b,c) VALUES(200,1,2,3);
+
+
+
+  CREATE TABLE t2(a INTEGER PRIMARY KEY, b);
+  CREATE UNIQUE INDEX t2b ON t2(b);
+  INSERT INTO t2(a,b) VALUES(1,1),(2,2),(3,3),(4,4);
+  CREATE TABLE fire(x);
+  CREATE TRIGGER t2r1 AFTER DELETE ON t2 BEGIN
+    INSERT INTO fire VALUES(old.a);
+  END;
+  UPDATE OR REPLACE t2 SET a=4, b=3 WHERE a=1;
+  SELECT *, 'x' FROM t2 ORDER BY a;
+
+
+
+  SELECT x FROM fire ORDER BY x;
+
+
+
+  DELETE FROM t2;
+  DELETE FROM fire;
+  INSERT INTO t2(a,b) VALUES(1,1),(2,2),(3,3),(4,4);
+  UPDATE OR REPLACE t2 SET a=1, b=3 WHERE a=1;
+  SELECT *, 'x' FROM t2 ORDER BY a;
+
+
+
+  SELECT x FROM fire ORDER BY x;
+
+
+
+  CREATE TABLE t3(a INTEGER PRIMARY KEY, b INT, c INT, d INT);
+  CREATE UNIQUE INDEX t3bpi ON t3(b) WHERE c<=d;
+  CREATE UNIQUE INDEX t3d ON t3(d);
+  INSERT INTO t3(a,b,c,d) VALUES(1,1,1,1),(2,1,3,2),(3,4,5,6);
+  CREATE TRIGGER t3r1 AFTER DELETE ON t3 BEGIN
+    SELECT 'hi';
+  END;
+  REPLACE INTO t3(a,b,c,d) VALUES(4,4,8,9);
+
+
+
+  SELECT *, 'x' FROM t3 ORDER BY a;
+
+
+
+  REPLACE INTO t3(a,b,c,d) VALUES(5,1,11,2);
+  SELECT *, 'x' FROM t3 ORDER BY a;
+
+
+
+  DELETE FROM t3;
+  INSERT INTO t3(a,b,c,d) VALUES(1,1,1,1),(2,1,3,2),(3,4,5,6);
+  DROP TRIGGER t3r1;
+  CREATE TRIGGER t3r1 AFTER DELETE ON t3 BEGIN
+    INSERT INTO t3(b,c,d) VALUES(old.b,old.c,old.d);
+  END;
+
+
+
+  REPLACE INTO t3(a,b,c,d) VALUES(4,4,8,9);
+
+
+
+  REPLACE INTO t3(a,b,c,d) VALUES(5,1,11,2);
+

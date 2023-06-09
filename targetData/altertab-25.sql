@@ -1,0 +1,9 @@
+
+
+  CREATE TABLE xx(x);
+  CREATE VIEW v3(b) AS WITH b AS (SELECT b FROM (SELECT * FROM t2)) VALUES(1);
+
+
+
+    ALTER TABLE json_each RENAME TO t4;
+  

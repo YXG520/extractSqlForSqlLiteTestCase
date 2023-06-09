@@ -1,0 +1,21 @@
+
+
+    CREATE TABLE tbl1(a INTEGER PRIMARY KEY AUTOINCREMENT);
+    INSERT INTO tbl1 VALUES(10);
+  
+
+
+    INSERT INTO tbl1 VALUES(NULL);
+    SELECT a FROM tbl1;
+  
+
+
+    ALTER TABLE tbl1 RENAME TO tbl2;
+    DELETE FROM tbl2;
+    INSERT INTO tbl2 VALUES(NULL);
+    SELECT a FROM tbl2;
+  
+
+
+    DROP TABLE tbl2;
+  

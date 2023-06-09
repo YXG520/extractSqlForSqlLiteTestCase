@@ -1,0 +1,15 @@
+
+
+    DROP TABLE IF EXISTS t1;
+    CREATE TABLE t1(x);
+  
+
+INSERT INTO t1 VALUES(?)
+
+
+    SELECT x IS TRUE FROM t1;
+  
+
+
+    SELECT x IS FALSE FROM t1;
+  

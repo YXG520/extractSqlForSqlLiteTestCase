@@ -1,0 +1,10 @@
+
+
+    CREATE TABLE t2(a INTEGER PRIMARY KEY, b);
+    INSERT INTO t2 SELECT * FROM t1;
+  
+SELECT min(a) FROM t2
+
+
+SELECT max(a) FROM t2
+

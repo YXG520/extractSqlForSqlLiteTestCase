@@ -1,0 +1,8 @@
+
+ $::presql SELECT sql FROM sqlite_master 
+
+  CREATE TABLE t1(a, b, c);
+  CREATE TABLE t2(a, b, c);
+  PRAGMA writable_schema = 1;
+  UPDATE sqlite_master SET rootpage = NULL WHERE name = 't2';
+

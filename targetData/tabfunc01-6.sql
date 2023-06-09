@@ -1,0 +1,7 @@
+
+
+  CREATE TABLE t600(a INTEGER PRIMARY KEY, b TEXT);
+  WITH RECURSIVE c(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM c WHERE x<100)
+    INSERT INTO t600(a,b) SELECT x, printf('(%03d)',x) FROM c;
+  SELECT b FROM t600 WHERE a IN generate_series(2,52,10);
+

@@ -1,0 +1,25 @@
+
+
+    CREATE TABLE t1(a PRIMARY KEY, b);
+    CREATE TABLE t2(c INTEGER PRIMARY KEY REFERENCES t1, b);
+  
+
+ INSERT INTO t2 VALUES(1, 'A'); 
+
+ 
+    INSERT INTO t1 VALUES(1, 2);
+    INSERT INTO t1 VALUES(2, 3);
+    INSERT INTO t2 VALUES(1, 'A');
+  
+
+ UPDATE t2 SET c = 2 
+
+ UPDATE t2 SET c = 3 
+
+ DELETE FROM t1 WHERE a = 2 
+
+ DELETE FROM t1 WHERE a = 1 
+
+ UPDATE t1 SET a = 3 
+
+ UPDATE t2 SET rowid = 3 

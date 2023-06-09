@@ -1,0 +1,8 @@
+
+
+  CREATE TABLE t6(x PRIMARY KEY COLLATE cmp, y) WITHOUT ROWID;
+  CREATE INDEX t6y ON t6(y);
+  INSERT INTO t6 VALUES('i', 'one');
+  INSERT INTO t6 VALUES('ii', 'one');
+  INSERT INTO t6 VALUES('iii', 'one');
+

@@ -1,0 +1,14 @@
+
+S
+Q
+
+S
+Q
+
+
+    SELECT * FROM t1 INDEXED BY i1, t2 INDEXED BY i3 WHERE a=c
+  
+
+
+    SELECT * FROM t2 INDEXED BY i3, t1 INDEXED BY i1 WHERE a=c
+  

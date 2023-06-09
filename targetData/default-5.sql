@@ -1,0 +1,5 @@
+
+
+  CREATE TABLE t1 (a,b DEFAULT(random() NOTNULL IN (RAISE(IGNORE),2,3)));
+  INSERT INTO t1(a) VALUES(1);
+

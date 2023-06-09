@@ -1,0 +1,112 @@
+
+
+    SELECT a, b FROM t1
+    UNION 
+    SELECT a, b FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT a, b FROM t1
+    UNION 
+    SELECT a, abs(b) FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT a, b FROM t1
+    UNION 
+    SELECT abs(a), b FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT a, b FROM t1
+    UNION 
+    SELECT abs(a), abs(b) FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT a, abs(b) FROM t1
+    UNION 
+    SELECT a, b FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT a, abs(b) FROM t1
+    UNION 
+    SELECT a, abs(b) FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT a, abs(b) FROM t1
+    UNION 
+    SELECT abs(a), b FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT a, abs(b) FROM t1
+    UNION 
+    SELECT abs(a), abs(b) FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT abs(a), b FROM t1
+    UNION 
+    SELECT a, b FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT abs(a), b FROM t1
+    UNION 
+    SELECT a, abs(b) FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT abs(a), b FROM t1
+    UNION 
+    SELECT abs(a), b FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT abs(a), b FROM t1
+    UNION 
+    SELECT abs(a), abs(b) FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT abs(a), abs(b) FROM t1
+    UNION 
+    SELECT a, b FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT abs(a), abs(b) FROM t1
+    UNION 
+    SELECT a, abs(b) FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT abs(a), abs(b) FROM t1
+    UNION 
+    SELECT abs(a), b FROM t1
+    ORDER BY 1
+  
+
+
+    SELECT abs(a), abs(b) FROM t1
+    UNION 
+    SELECT abs(a), abs(b) FROM t1
+    ORDER BY 1
+  

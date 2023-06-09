@@ -1,0 +1,9 @@
+
+SELECT SQLITE_RENAME_COLUMN(0,0,0,0,0,0,0,0,0)
+
+    1 { SELECT SQLITE_RENAME_TABLE(0,0,0,0,0,0,0) 
+
+
+
+  SELECT sqlite_rename_table(0,0,0,0,0,0,0);
+

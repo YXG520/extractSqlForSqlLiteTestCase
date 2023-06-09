@@ -1,0 +1,17 @@
+
+
+    CREATE TABLE t4(a COLLATE NOCASE);
+    INSERT INTO t4 VALUES('This');
+    INSERT INTO t4 VALUES('this');
+    INSERT INTO t4 VALUES('THIS');
+    SELECT * FROM t4 WHERE a = 'THIS';
+  
+
+
+      SELECT * FROM (SELECT * FROM t4) WHERE a = 'THIS';
+    
+
+
+    CREATE VIEW v11 AS SELECT * FROM t4;
+    SELECT * FROM v11 WHERE a = 'THIS';
+  

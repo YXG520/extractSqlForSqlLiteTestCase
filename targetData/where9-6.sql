@@ -1,0 +1,171 @@
+
+SELECT count(*) FROM t1 UNION ALL SELECT a FROM t1 WHERE a>=85
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a>=85;
+    ROLLBACK;
+  
+
+B
+
+
+     SELECT count(*) FROM t1 UNION ALL
+     SELECT a FROM t1 WHERE a>=85;
+     ROLLBACK;
+  
+
+B
+
+
+     SELECT count(*) FROM t1 UNION ALL
+     SELECT a FROM t1 WHERE a>=85;
+     ROLLBACK
+  
+
+B
+
+
+     SELECT count(*) FROM t1 UNION ALL SELECT a FROM t1 WHERE a>=85;
+     ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a BETWEEN 85 AND 100;
+    ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a BETWEEN 85 AND 200;
+    ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a BETWEEN 85 AND 100;
+    ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a BETWEEN 85 AND 100;
+    ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a BETWEEN 85 AND 100;
+    ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a BETWEEN 85 AND 100;
+    ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a IN (5,31,57,82,83,84,85,86,87);
+    ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a%100 IN (5,31,57,82,83,84,85,86,87) ORDER BY rowid;
+    ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a BETWEEN 85 AND 100;
+    ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a BETWEEN 85 AND 200;
+    ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a BETWEEN 85 AND 100;
+    ROLLBACK;
+  
+
+B
+
+
+    SELECT count(*) FROM t1 UNION ALL
+    SELECT a FROM t1 WHERE a BETWEEN 85 AND 200;
+    ROLLBACK;
+  
+
+
+    DELETE FROM t1 INDEXED BY t1b
+     WHERE (+b IS NULL AND c NOT NULL AND d NOT NULL)
+        OR (b NOT NULL AND c IS NULL AND d NOT NULL)
+        OR (b NOT NULL AND c NOT NULL AND d IS NULL)
+  
+
+
+    UPDATE t1 INDEXED BY t1b SET a=a+100
+     WHERE (+b IS NULL AND c NOT NULL AND d NOT NULL)
+        OR (b NOT NULL AND c IS NULL AND d NOT NULL)
+        OR (b NOT NULL AND c NOT NULL AND d IS NULL)
+  
+
+
+      UPDATE t1 INDEXED BY t1b SET a=a+100
+       WHERE (b IS NULL AND c NOT NULL AND d NOT NULL)
+          OR (b NOT NULL AND c IS NULL AND d NOT NULL)
+          OR (b NOT NULL AND c NOT NULL AND d IS NULL)
+    
+
+
+      DELETE FROM t1 INDEXED BY t1b
+       WHERE (b IS NULL AND c NOT NULL AND d NOT NULL)
+          OR (b NOT NULL AND c IS NULL AND d NOT NULL)
+          OR (b NOT NULL AND c NOT NULL AND d IS NULL)
+    
+
+
+      UPDATE t1 INDEXED BY t1b SET a=a+100
+       WHERE (b IS NULL AND c NOT NULL AND d NOT NULL)
+          OR (b NOT NULL AND c IS NULL AND d NOT NULL)
+          OR (b NOT NULL AND c NOT NULL AND d IS NULL)
+    
+
+
+      DELETE FROM t1 INDEXED BY t1b
+       WHERE (b IS NULL AND c NOT NULL AND d NOT NULL)
+          OR (b NOT NULL AND c IS NULL AND d NOT NULL)
+          OR (b NOT NULL AND c NOT NULL AND d IS NULL)
+    

@@ -1,0 +1,7 @@
+
+
+  CREATE TABLE t1(a INT, b AS (a*2) NOT NULL);
+  CREATE TEMP TABLE t2(a PRIMARY KEY, b, c UNIQUE) WITHOUT ROWID;
+  CREATE UNIQUE INDEX t2x ON t2(c,b);
+  PRAGMA integrity_check;
+

@@ -1,0 +1,6 @@
+
+
+
+ UPDATE t1 SET v = $new WHERE k = 20 
+ DELETE FROM t1 WHERE k=19 
+ INSERT INTO t1(v) VALUES($new) 

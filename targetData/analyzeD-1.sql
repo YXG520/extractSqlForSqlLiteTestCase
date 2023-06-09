@@ -1,0 +1,37 @@
+
+
+  CREATE TABLE t1(a, b, c);
+
+
+ INSERT INTO t1(a, b, c) VALUES( 2*($i/100), $i%10, $c ) 
+
+    INSERT INTO t1 VALUES(3001, 3001, 3001);
+    INSERT INTO t1 VALUES(3001, 3001, 3002);
+    INSERT INTO t1 VALUES(3001, 3001, 3003);
+    INSERT INTO t1 VALUES(3001, 3001, 3004);
+    INSERT INTO t1 VALUES(3001, 3001, 3005);
+    INSERT INTO t1 VALUES(3001, 3001, 3006);
+    INSERT INTO t1 VALUES(3001, 3001, 3007);
+
+    CREATE INDEX t1_ab ON t1(a, b);
+    CREATE INDEX t1_c ON t1(c);
+
+    ANALYZE;
+  
+
+S
+
+ DELETE FROM sqlite_stat1 
+
+S
+
+ 
+    UPDATE t1 SET a=13 WHERE a = 3001;
+    ANALYZE;
+  
+
+S
+
+ DELETE FROM sqlite_stat1 
+
+S

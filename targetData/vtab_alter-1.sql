@@ -1,0 +1,12 @@
+
+ CREATE TABLE t1(a, b VARCHAR, c INTEGER) 
+
+ CREATE VIRTUAL TABLE t1echo USING echo(t1) 
+
+ SELECT * FROM t1echo 
+
+ ALTER TABLE t1echo RENAME TO new 
+
+ SELECT * FROM t1echo 
+
+ SELECT * FROM new 

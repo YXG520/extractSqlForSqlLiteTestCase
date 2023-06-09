@@ -1,0 +1,26 @@
+
+
+  DROP TABLE IF EXISTS aa;
+  DROP TABLE IF EXISTS bb;
+  CREATE TABLE aa(x INT);  INSERT INTO aa(x) VALUES(123);
+  CREATE TABLE bb(y INT);  INSERT INTO bb(y) VALUES(456);
+  SELECT (SELECT sum(x+(SELECT y)) FROM bb) FROM aa;
+
+
+
+  SELECT (SELECT sum(x+y) FROM bb) FROM aa;
+
+
+
+  DROP TABLE IF EXISTS tx;
+  DROP TABLE IF EXISTS ty;
+  CREATE TABLE tx(x INT);
+  INSERT INTO tx VALUES(1),(2),(3),(4),(5);
+  CREATE TABLE ty(y INT);
+  INSERT INTO ty VALUES(91),(92),(93);
+  SELECT min((SELECT count(y) FROM ty)) FROM tx;
+
+
+
+  SELECT max((SELECT a FROM (SELECT count(*) AS a FROM ty) AS s)) FROM tx;
+

@@ -1,0 +1,9 @@
+
+
+    CREATE VIEW v15 AS SELECT a AS x, b AS y FROM t1;
+    SELECT * FROM v15 LIMIT 1;
+  
+
+
+    SELECT x, y FROM v15 LIMIT 1
+  

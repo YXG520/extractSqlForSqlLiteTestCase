@@ -1,0 +1,9 @@
+
+
+  CREATE TABLE t2(e INT UNIQUE, f TEXT);
+  SELECT d, f FROM t1 LEFT JOIN t2 ON (e=d)
+  WHERE a=100
+    AND b IN (200,201,202,204)
+    AND c IN (300,302,301,305)
+  ORDER BY +d;
+

@@ -1,0 +1,11 @@
+
+
+  CREATE TABLE t7(a, b, c);
+  CREATE VIEW v7 AS SELECT * FROM t7;
+
+
+SELECT a, c FROM v7
+
+SELECT a, c FROM t7
+
+SELECT a, c FROM t7 AS v7

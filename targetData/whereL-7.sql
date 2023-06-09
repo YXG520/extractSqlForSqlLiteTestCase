@@ -1,0 +1,11 @@
+
+
+  CREATE TABLE t1(v INTEGER);
+  WITH RECURSIVE c(x) AS (VALUES(-10) UNION ALL SELECT x+1 FROM c WHERE x<10)
+    INSERT INTO t1(v) SELECT x FROM c;
+  CREATE INDEX idx ON t1( abs(v) );
+  SELECT v FROM t1 WHERE abs(v)=1 and v=1;
+
+
+S
+Q

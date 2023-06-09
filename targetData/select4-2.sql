@@ -1,0 +1,29 @@
+
+
+    SELECT DISTINCT log FROM t1
+    UNION
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY log;
+  
+
+
+      SELECT log FROM t1 WHERE n IN 
+        (SELECT DISTINCT log FROM t1 UNION
+         SELECT n FROM t1 WHERE log=3)
+      ORDER BY log;
+    
+
+
+    SELECT DISTINCT log FROM t1 ORDER BY log
+    UNION
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY log;
+  
+
+
+    SELECT 0 ORDER BY (SELECT 0) UNION SELECT 0;
+  
+
+
+  SELECT 123 AS x ORDER BY (SELECT x ORDER BY 1);
+

@@ -1,0 +1,15 @@
+
+
+     CREATE TABLE t1(
+       x INTEGER PRIMARY KEY AUTOINCREMENT
+     )
+  
+
+     CREATE TABLE t1(
+       x INTEGER PRIMARY KEY AUTOINCREMENT
+     )
+  
+
+    INSERT INTO t1 VALUES(NULL);
+    SELECT * FROM t1;
+  

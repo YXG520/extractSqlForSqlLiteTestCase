@@ -1,0 +1,22 @@
+
+SELECT count(*) FROM sqlite_master
+
+SELECT count(*) FROM t1
+
+SELECT count(*) FROM t1 WHERE x>13
+
+SELECT count(*) FROM t2
+
+SELECT count(*) FROM t2 WHERE x<13
+
+BEGIN; UPDATE t1 SET y=1; ROLLBACK;
+
+BEGIN; UPDATE t2 SET y='abcdef-uvwxyz'; ROLLBACK;
+
+BEGIN; DELETE FROM t1 WHERE x>13; ROLLBACK;
+
+BEGIN; DELETE FROM t2 WHERE x<13; ROLLBACK;
+
+BEGIN; CREATE TABLE t3 AS SELECT x,3 as y FROM t2 WHERE rowid%5!=0; ROLLBACK;
+PRAGMA integrity_check
+

@@ -1,0 +1,28 @@
+
+
+  CREATE TABLE ttt(c0, c1);
+  CREATE INDEX ii ON ttt(CAST(c0 AS NUMERIC)); 
+  INSERT INTO ttt VALUES('abc', '-1');
+
+
+
+  SELECT * FROM ttt WHERE CAST(c0 AS NUMERIC) > c1 GROUP BY rowid; 
+
+
+
+  SELECT * FROM ttt INDEXED BY ii WHERE CAST(c0 AS NUMERIC) > c1 GROUP BY rowid;
+
+
+
+  CREATE TABLE t3(a, b, c INTEGER);
+  CREATE INDEX t3ac ON t3(a, c-1);
+  INSERT INTO t3 VALUES(1, 1, 1);
+  INSERT INTO t3 VALUES(2, 1, 0);
+  INSERT INTO t3 VALUES(3, 1, 1);
+  INSERT INTO t3 VALUES(4, 1, 0);
+  INSERT INTO t3 VALUES(5, 1, 1);
+
+
+
+  SELECT * FROM t3 WHERE c='0' ORDER BY a;
+

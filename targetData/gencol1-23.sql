@@ -1,0 +1,30 @@
+
+SELECT typeof(b) FROM t1 INDEXED BY x2
+
+
+  DROP TABLE t1;
+  CREATE TABLE t1(
+    x,
+    a INT AS (x) VIRTUAL,
+    b BLOB AS (x) VIRTUAL
+  );
+  CREATE INDEX x2 ON t1(a);
+  INSERT INTO t1(x) VALUES(NULL),('1'),('xyz'),(2),(3.5);
+  SELECT quote(a) FROM t1 INDEXED BY x2;
+
+
+
+  EXPLAIN SELECT a FROM t1 INDEXED BY x2;
+
+
+
+  EXPLAIN SELECT b FROM t1 INDEXED BY x2;
+
+
+
+  CREATE TABLE v0(c1 INT, c2 AS (RAISE(IGNORE)));
+
+
+
+  SELECT * FROM v0;
+

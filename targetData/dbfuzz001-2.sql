@@ -1,0 +1,2 @@
+
+INSERT INTO t3 SELECT * FROM t2;

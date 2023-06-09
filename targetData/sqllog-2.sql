@@ -1,0 +1,12 @@
+
+
+  INSERT INTO t1 VALUES(4, 5);
+  SELECT * FROM t1;
+
+
+
+
+  INSERT INTO t1 VALUES(6, 7);
+  SELECT * FROM t1;
+
+

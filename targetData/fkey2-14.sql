@@ -1,0 +1,139 @@
+
+ 
+      CREATE TABLE t1(a PRIMARY KEY);
+      CREATE TABLE t2(a, b);
+      INSERT INTO t2 VALUES(1,2);
+    
+ ALTER TABLE t2 ADD COLUMN c REFERENCES t1 
+
+ ALTER TABLE t2 ADD COLUMN d DEFAULT NULL REFERENCES t1 
+
+ ALTER TABLE t2 ADD COLUMN e REFERENCES t1 DEFAULT NULL
+
+ ALTER TABLE t2 ADD COLUMN f REFERENCES t1 DEFAULT 'text'
+
+ ALTER TABLE t2 ADD COLUMN g DEFAULT CURRENT_TIME REFERENCES t1 
+
+ 
+      PRAGMA foreign_keys = off;
+      ALTER TABLE t2 ADD COLUMN h DEFAULT 'text' REFERENCES t1;
+      PRAGMA foreign_keys = on;
+      SELECT sql FROM sqlite_master WHERE name='t2';
+    
+SELECT sqlite_rename_table(
+        'main', 'table', 't1', $zCreate, $zOld, $zNew, 0
+    )
+
+
+
+
+
+      CREATE TABLE t1(a PRIMARY KEY, b REFERENCES t1);
+      CREATE TABLE t2(a PRIMARY KEY, b REFERENCES t1, c REFERENCES t2);
+      CREATE TABLE t3(a REFERENCES t1, b REFERENCES t2, c REFERENCES t1);
+    
+ SELECT sql FROM sqlite_master WHERE type = 'table'
+
+ ALTER TABLE t1 RENAME TO t4 
+ SELECT sql FROM sqlite_master WHERE type = 'table'
+
+ INSERT INTO t3 VALUES(1, 2, 3) 
+
+ INSERT INTO t4 VALUES(1, NULL) 
+
+ UPDATE t4 SET b = 5 
+
+ UPDATE t4 SET b = 1 
+
+ INSERT INTO t3 VALUES(1, NULL, 1) 
+
+ 
+      CREATE TEMP TABLE t1(a PRIMARY KEY);
+      CREATE TEMP TABLE t2(a, b);
+      INSERT INTO temp.t2 VALUES(1,2);
+    
+ ALTER TABLE t2 ADD COLUMN c REFERENCES t1 
+
+ ALTER TABLE t2 ADD COLUMN d DEFAULT NULL REFERENCES t1 
+
+ ALTER TABLE t2 ADD COLUMN e REFERENCES t1 DEFAULT NULL
+
+ ALTER TABLE t2 ADD COLUMN f REFERENCES t1 DEFAULT 'text'
+
+ ALTER TABLE t2 ADD COLUMN g DEFAULT CURRENT_TIME REFERENCES t1 
+
+ 
+      PRAGMA foreign_keys = off;
+      ALTER TABLE t2 ADD COLUMN h DEFAULT 'text' REFERENCES t1;
+      PRAGMA foreign_keys = on;
+      SELECT sql FROM temp.sqlite_master WHERE name='t2';
+    
+
+
+
+
+
+      CREATE TEMP TABLE t1(a PRIMARY KEY, b REFERENCES t1);
+      CREATE TEMP TABLE t2(a PRIMARY KEY, b REFERENCES t1, c REFERENCES t2);
+      CREATE TEMP TABLE t3(a REFERENCES t1, b REFERENCES t2, c REFERENCES t1);
+    
+ SELECT sql FROM sqlite_temp_master WHERE type = 'table'
+
+ ALTER TABLE t1 RENAME TO t4 
+ SELECT sql FROM temp.sqlite_master WHERE type = 'table'
+
+ INSERT INTO t3 VALUES(1, 2, 3) 
+
+ INSERT INTO t4 VALUES(1, NULL) 
+
+ UPDATE t4 SET b = 5 
+
+ UPDATE t4 SET b = 1 
+
+ INSERT INTO t3 VALUES(1, NULL, 1) 
+
+ 
+      ATTACH ':memory:' AS aux;
+      CREATE TABLE aux.t1(a PRIMARY KEY);
+      CREATE TABLE aux.t2(a, b);
+      INSERT INTO aux.t2(a,b) VALUES(1,2);
+    
+ ALTER TABLE t2 ADD COLUMN c REFERENCES t1 
+
+ ALTER TABLE t2 ADD COLUMN d DEFAULT NULL REFERENCES t1 
+
+ ALTER TABLE t2 ADD COLUMN e REFERENCES t1 DEFAULT NULL
+
+ ALTER TABLE t2 ADD COLUMN f REFERENCES t1 DEFAULT 'text'
+
+ ALTER TABLE t2 ADD COLUMN g DEFAULT CURRENT_TIME REFERENCES t1 
+
+ 
+      PRAGMA foreign_keys = off;
+      ALTER TABLE t2 ADD COLUMN h DEFAULT 'text' REFERENCES t1;
+      PRAGMA foreign_keys = on;
+      SELECT sql FROM aux.sqlite_master WHERE name='t2';
+    
+
+
+
+
+
+      CREATE TABLE aux.t1(a PRIMARY KEY, b REFERENCES t1);
+      CREATE TABLE aux.t2(a PRIMARY KEY, b REFERENCES t1, c REFERENCES t2);
+      CREATE TABLE aux.t3(a REFERENCES t1, b REFERENCES t2, c REFERENCES t1);
+    
+ SELECT sql FROM aux.sqlite_master WHERE type = 'table'
+
+ ALTER TABLE t1 RENAME TO t4 
+ SELECT sql FROM aux.sqlite_master WHERE type = 'table'
+
+ INSERT INTO t3 VALUES(1, 2, 3) 
+
+ INSERT INTO t4 VALUES(1, NULL) 
+
+ UPDATE t4 SET b = 5 
+
+ UPDATE t4 SET b = 1 
+
+ INSERT INTO t3 VALUES(1, NULL, 1) 

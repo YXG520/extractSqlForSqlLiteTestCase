@@ -1,0 +1,13 @@
+
+
+  CREATE TABLE t1(a INT); INSERT INTO t1(a) VALUES(0);
+
+
+
+  WITH t1(b) AS (SELECT * FROM (SELECT * FROM (VALUES(2))))
+  UPDATE t1 SET a=3 LIMIT 1;
+
+
+
+  SELECT * FROM t1;
+

@@ -1,0 +1,120 @@
+
+
+    CREATE TABLE t1(a);
+    INSERT INTO t1 VALUES(111);
+  
+
+    CREATE TABLE t2(b);
+    INSERT INTO t2 VALUES(222);
+  
+
+    CREATE TABLE t3(c);
+    INSERT INTO t3 VALUES(333);
+  
+
+    CREATE TABLE t4(d);
+    INSERT INTO t4 VALUES(444);
+  
+
+    ATTACH DATABASE 'test2.db' AS two;
+    ATTACH DATABASE 'test3.db' AS three;
+    ATTACH DATABASE 'test4.db' AS four;
+  
+
+    ATTACH DATABASE 'test4.db' AS four;
+    ATTACH DATABASE 'test3.db' AS three;
+    ATTACH DATABASE 'test1.db' AS one;
+  
+
+    ATTACH DATABASE 'test1.db' AS one;
+    ATTACH DATABASE 'test2.db' AS two;
+    ATTACH DATABASE 'test4.db' AS four;
+  
+
+    ATTACH DATABASE 'test3.db' AS three;
+    ATTACH DATABASE 'test2.db' AS two;
+    ATTACH DATABASE 'test1.db' AS one;
+  
+
+     SELECT a FROM t1 UNION ALL
+     SELECT b FROM t2 UNION ALL
+     SELECT c FROM t3 UNION ALL
+     SELECT d FROM t4;
+  
+
+
+     SELECT a FROM t1 UNION ALL
+     SELECT b FROM t2 UNION ALL
+     SELECT d FROM t4 UNION ALL
+     SELECT c FROM t3;
+  
+
+
+     SELECT a FROM t1 UNION ALL
+     SELECT c FROM t3 UNION ALL
+     SELECT b FROM t2 UNION ALL
+     SELECT d FROM t4;
+  
+
+
+     SELECT a FROM t1 UNION ALL
+     SELECT c FROM t3 UNION ALL
+     SELECT d FROM t4 UNION ALL
+     SELECT b FROM t2;
+  
+
+
+     SELECT a FROM t1 UNION ALL
+     SELECT d FROM t4 UNION ALL
+     SELECT b FROM t2 UNION ALL
+     SELECT c FROM t3;
+  
+
+
+     SELECT a FROM t1 UNION ALL
+     SELECT d FROM t4 UNION ALL
+     SELECT c FROM t3 UNION ALL
+     SELECT b FROM t2;
+  
+
+
+     SELECT b FROM t2 UNION ALL
+     SELECT a FROM t1 UNION ALL
+     SELECT c FROM t3 UNION ALL
+     SELECT d FROM t4;
+  
+
+
+     SELECT b FROM t2 UNION ALL
+     SELECT a FROM t1 UNION ALL
+     SELECT d FROM t4 UNION ALL
+     SELECT c FROM t3;
+  
+
+
+     SELECT b FROM t2 UNION ALL
+     SELECT c FROM t3 UNION ALL
+     SELECT a FROM t1 UNION ALL
+     SELECT d FROM t4;
+  
+
+
+     SELECT b FROM t2 UNION ALL
+     SELECT c FROM t3 UNION ALL
+     SELECT d FROM t4 UNION ALL
+     SELECT a FROM t1;
+  
+
+
+     SELECT c FROM t3 UNION ALL
+     SELECT a FROM t1 UNION ALL
+     SELECT b FROM t2 UNION ALL
+     SELECT d FROM t4;
+  
+
+
+     SELECT c FROM t3 UNION ALL
+     SELECT a FROM t1 UNION ALL
+     SELECT d FROM t4 UNION ALL
+     SELECT b FROM t2;
+  

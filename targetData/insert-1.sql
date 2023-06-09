@@ -1,0 +1,34 @@
+
+INSERT INTO test1 VALUES(1,2,3)
+
+INSERT INTO sqlite_master VALUES(1,2,3,4)
+
+CREATE TABLE test1(one int, two int, three int)
+INSERT INTO test1 VALUES(1,2)
+
+INSERT INTO test1 VALUES(1,2,3,4)
+
+INSERT INTO test1(one,two) VALUES(1,2,3,4)
+
+INSERT INTO test1(one,two) VALUES(1)
+
+INSERT INTO test1(one,four) VALUES(1,2)
+
+INSERT INTO test1 VALUES(1,2,3)
+SELECT * FROM test1
+
+INSERT INTO test1 VALUES(4,5,6)
+SELECT * FROM test1 ORDER BY one
+
+INSERT INTO test1 VALUES(7,8,9)
+SELECT * FROM test1 ORDER BY one
+
+DELETE FROM test1
+INSERT INTO test1(one,two) VALUES(1,2)
+SELECT * FROM test1 ORDER BY one
+
+INSERT INTO test1(two,three) VALUES(5,6)
+SELECT * FROM test1 ORDER BY one
+
+INSERT INTO test1(three,one) VALUES(7,8)
+SELECT * FROM test1 ORDER BY one

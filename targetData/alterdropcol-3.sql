@@ -1,0 +1,13 @@
+
+
+  CREATE TABLE t12(a, b, c, CHECK(c>10));
+  CREATE TABLE t13(a, b, c CHECK(c>10));
+
+
+
+  ALTER TABLE t12 DROP COLUMN c;
+
+
+
+  ALTER TABLE t13 DROP COLUMN c;
+

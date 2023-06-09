@@ -1,0 +1,4 @@
+
+
+   SELECT CASE WHEN 1 THEN 1 END;
+

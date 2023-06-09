@@ -1,0 +1,25 @@
+
+
+  CREATE TABLE e1(a TEXT, c NUMERIC);
+  CREATE TABLE e2(x BLOB, y BLOB);
+
+  INSERT INTO e1 VALUES(2, 2);
+
+  INSERT INTO e2 VALUES ('2', 2);
+  INSERT INTO e2 VALUES ('2', '2');
+  INSERT INTO e2 VALUES ('2', '2.0');
+
+  CREATE INDEX e1c ON e1(c);
+
+
+
+  SELECT rowid FROM e1 WHERE (a, c) IN (SELECT x, y FROM e2);
+
+
+
+  SELECT rowid FROM e2 WHERE rowid IN (SELECT +c FROM e1);
+
+
+
+  SELECT rowid FROM e2 WHERE rowid IN (SELECT 0+c FROM e1);
+

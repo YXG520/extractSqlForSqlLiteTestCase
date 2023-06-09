@@ -1,0 +1,26 @@
+
+ INSERT INTO c DEFAULT VALUES 
+
+
+    CREATE TABLE t1(a PRIMARY KEY, b) WITHOUT rowid;
+    CREATE TABLE t2(c, d, FOREIGN KEY(rowid) REFERENCES t1(a));
+  
+
+
+    CREATE TABLE t1(a PRIMARY KEY, b) WITHOUT rowid;
+    CREATE TABLE t2(rowid, d, FOREIGN KEY(rowid) REFERENCES t1(a));
+  
+
+
+    CREATE TABLE t1(a, b);
+    CREATE TABLE t2(c, d, FOREIGN KEY(c) REFERENCES t1(rowid));
+    INSERT INTO t1(rowid, a, b) VALUES(1, 1, 1);
+    INSERT INTO t2 VALUES(1, 1);
+  
+
+
+    CREATE TABLE t1(rowid PRIMARY KEY, b) WITHOUT rowid;
+    CREATE TABLE t2(c, d, FOREIGN KEY(c) REFERENCES t1(rowid));
+    INSERT INTO t1(rowid, b) VALUES(1, 1);
+    INSERT INTO t2 VALUES(1, 1);
+  

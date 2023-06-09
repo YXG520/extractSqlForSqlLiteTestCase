@@ -1,0 +1,28 @@
+
+
+    CREATE VIEW v2 AS SELECT * FROM t1 WHERE a>5
+  
+
+    SELECT * FROM v2;
+  
+
+
+    INSERT INTO v2 VALUES(1,2,3,4);
+  
+
+
+    UPDATE v2 SET a=10 WHERE a=5;
+  
+
+
+    DELETE FROM v2;
+  
+
+
+    INSERT INTO t1 VALUES(11,12,13,14);
+    SELECT * FROM v2 ORDER BY x;
+  
+
+
+    SELECT x FROM v2 WHERE a>10
+  

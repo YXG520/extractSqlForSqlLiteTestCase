@@ -1,0 +1,28 @@
+
+
+  CREATE TABLE c1(a INTEGER, b TEXT);
+  INSERT INTO c1 VALUES(1, 1);
+  CREATE TABLE c2(x BLOB, y BLOB);
+  INSERT INTO c2 VALUES(1, 1);
+
+
+
+  SELECT * FROM c1 WHERE (a, b) IN (SELECT x, y FROM c2)
+
+
+
+  CREATE UNIQUE INDEX c1ab ON c1(a, b);
+  SELECT * FROM c1 WHERE (a, b) IN (SELECT x, y FROM c2)
+
+
+
+  SELECT * FROM c1 WHERE (a, +b) IN (SELECT x, y FROM c2)
+
+
+
+  SELECT c1.rowid FROM c1 WHERE b = (SELECT y FROM c2);
+
+
+
+  SELECT c1.rowid FROM c1 WHERE (a, b) = (SELECT x, y FROM c2);
+

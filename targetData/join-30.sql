@@ -1,0 +1,21 @@
+
+
+  CREATE TABLE t0(z INT);         INSERT INTO t0 VALUES(1),(2);
+  CREATE TABLE t1(a INT);         INSERT INTO t1 VALUES(1);
+  CREATE TABLE t2(b INT);         INSERT INTO t2 VALUES(2);
+  CREATE TABLE t3(c INT, d INT);  INSERT INTO t3 VALUES(3,4);
+  CREATE TABLE t4(e INT);         INSERT INTO t4 VALUES(5);
+  CREATE VIEW v5(x,y) AS SELECT c, d FROM t3 LEFT JOIN t4 ON false;
+
+
+
+  SELECT DISTINCT a, b
+    FROM t1 RIGHT JOIN t2 ON a=b LEFT JOIN v5 ON false
+   WHERE x <= y;
+
+
+
+  SELECT DISTINCT a, b
+    FROM t0 JOIN t1 ON z=a RIGHT JOIN t2 ON a=b LEFT JOIN v5 ON false
+   WHERE x <= y;
+

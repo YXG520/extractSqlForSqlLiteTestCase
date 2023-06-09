@@ -1,0 +1,53 @@
+
+
+  CREATE TABLE t1(id INTEGER PRIMARY KEY, a INT);
+  CREATE TABLE t2(id INTEGER PRIMARY KEY, b INT);
+  CREATE TABLE t3(id INTEGER PRIMARY KEY, c INT);
+  CREATE TABLE t4(id INTEGER PRIMARY KEY, d INT);
+  CREATE TABLE t5(id INTEGER PRIMARY KEY, e INT);
+  CREATE TABLE t6(id INTEGER PRIMARY KEY, f INT);
+  CREATE TABLE t7(id INTEGER PRIMARY KEY, g INT);
+  CREATE TABLE t8(id INTEGER PRIMARY KEY, h INT);
+  INSERT INTO t1 SELECT value, 1 FROM generate_series(1,256) WHERE value & 1;
+  INSERT INTO t2 SELECT value, 1 FROM generate_series(1,256) WHERE value & 2;
+  INSERT INTO t3 SELECT value, 1 FROM generate_series(1,256) WHERE value & 4;
+  INSERT INTO t4 SELECT value, 1 FROM generate_series(1,256) WHERE value & 8;
+  INSERT INTO t5 SELECT value, 1 FROM generate_series(1,256) WHERE value & 16;
+  INSERT INTO t6 SELECT value, 1 FROM generate_series(1,256) WHERE value & 32;
+  INSERT INTO t7 SELECT value, 1 FROM generate_series(1,256) WHERE value & 64;
+  INSERT INTO t8 SELECT value, 1 FROM generate_series(1,256) WHERE value & 128;
+  CREATE TABLE t9 AS
+    SELECT id, h, g, f, e, d, c, b, a
+      FROM t1
+      NATURAL FULL JOIN t2
+      NATURAL FULL JOIN t3
+      NATURAL FULL JOIN t4
+      NATURAL FULL JOIN t5
+      NATURAL FULL JOIN t6
+      NATURAL FULL JOIN t7
+      NATURAL FULL JOIN t8;
+
+
+
+  SELECT count(*) FROM t9;
+
+
+
+  SELECT id, count(*) FROM t9 GROUP BY id HAVING count(*)!=1;
+
+
+
+  UPDATE t9 SET a=0 WHERE a IS NULL;
+  UPDATE t9 SET b=0 WHERE b IS NULL;
+  UPDATE t9 SET c=0 WHERE c IS NULL;
+  UPDATE t9 SET d=0 WHERE d IS NULL;
+  UPDATE t9 SET e=0 WHERE e IS NULL;
+  UPDATE t9 SET f=0 WHERE f IS NULL;
+  UPDATE t9 SET g=0 WHERE g IS NULL;
+  UPDATE t9 SET h=0 WHERE h IS NULL;
+  SELECT count(*) FROM t9 WHERE id=128*h+64*g+32*f+16*e+8*d+4*c+2*b+a;
+
+
+
+  SELECT * FROM t9 WHERE id<>128*h+64*g+32*f+16*e+8*d+4*c+2*b+a;
+

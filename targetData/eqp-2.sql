@@ -1,0 +1,7 @@
+
+
+  CREATE TABLE t1(x INT, y INT, ex TEXT);
+
+  CREATE TABLE t2(x INT, y INT, ex TEXT);
+  CREATE INDEX t2i1 ON t2(x);
+

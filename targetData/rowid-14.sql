@@ -1,0 +1,22 @@
+
+
+  CREATE TABLE t14(x INTEGER PRIMARY KEY);
+  INSERT INTO t14(x) VALUES (100);
+
+
+
+  SELECT * FROM t14 WHERE x < 'a' ORDER BY rowid ASC;
+
+
+
+  SELECT * FROM t14 WHERE x < 'a' ORDER BY rowid DESC;
+
+
+
+  DELETE FROM t14;
+  SELECT * FROM t14 WHERE x < 'a' ORDER BY rowid ASC;
+
+
+
+  SELECT * FROM t14 WHERE x < 'a' ORDER BY rowid DESC;
+

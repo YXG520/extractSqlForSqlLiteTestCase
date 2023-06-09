@@ -1,0 +1,83 @@
+
+
+  DROP TABLE t1;
+  CREATE TABLE t1(a INTEGER PRIMARY KEY, b INT, c INT, d INT, e INT);
+  CREATE UNIQUE INDEX t1b ON t1(b);
+  CREATE UNIQUE INDEX t1e ON t1(e);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,3,4,5);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,33,44,5)
+    ON CONFLICT(e) DO UPDATE SET c=excluded.c;
+  SELECT * FROM t1;
+
+
+
+  DELETE FROM t1;
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,3,4,5);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,33,44,5)
+    ON CONFLICT(a) DO UPDATE SET c=excluded.c;
+  SELECT * FROM t1;
+
+
+
+  DELETE FROM t1;
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,3,4,5);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,33,44,5)
+    ON CONFLICT(b) DO UPDATE SET c=excluded.c;
+  SELECT * FROM t1;
+
+
+
+  DROP TABLE t1;
+  CREATE TABLE t1(a INT, b INT, c INT, d INT, e INT);
+  CREATE UNIQUE INDEX t1a ON t1(a);
+  CREATE UNIQUE INDEX t1b ON t1(b);
+  CREATE UNIQUE INDEX t1e ON t1(e);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,3,4,5);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,33,44,5)
+    ON CONFLICT(e) DO UPDATE SET c=excluded.c;
+  SELECT * FROM t1;
+
+
+
+  DELETE FROM t1;
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,3,4,5);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,33,44,5)
+    ON CONFLICT(a) DO UPDATE SET c=excluded.c;
+  SELECT * FROM t1;
+
+
+
+  DELETE FROM t1;
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,3,4,5);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,33,44,5)
+    ON CONFLICT(b) DO UPDATE SET c=excluded.c;
+  SELECT * FROM t1;
+
+
+
+  DROP TABLE t1;
+  CREATE TABLE t1(a INT PRIMARY KEY, b INT, c INT, d INT, e INT) WITHOUT ROWID;
+  CREATE UNIQUE INDEX t1a ON t1(a);
+  CREATE UNIQUE INDEX t1b ON t1(b);
+  CREATE UNIQUE INDEX t1e ON t1(e);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,3,4,5);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,33,44,5)
+    ON CONFLICT(e) DO UPDATE SET c=excluded.c;
+  SELECT * FROM t1;
+
+
+
+  DELETE FROM t1;
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,3,4,5);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,33,44,5)
+    ON CONFLICT(a) DO UPDATE SET c=excluded.c;
+  SELECT * FROM t1;
+
+
+
+  DELETE FROM t1;
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,3,4,5);
+  INSERT INTO t1(a,b,c,d,e) VALUES(1,2,33,44,5)
+    ON CONFLICT(b) DO UPDATE SET c=excluded.c;
+  SELECT * FROM t1;
+

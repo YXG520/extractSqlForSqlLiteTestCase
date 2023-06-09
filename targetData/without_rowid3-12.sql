@@ -1,0 +1,67 @@
+
+
+    CREATE TABLE t1(a, b PRIMARY KEY) WITHOUT rowid;
+    CREATE TABLE t2(
+      x REFERENCES t1 ON UPDATE RESTRICT DEFERRABLE INITIALLY DEFERRED 
+    );
+    INSERT INTO t1 VALUES(1, 'one');
+    INSERT INTO t1 VALUES(2, 'two');
+    INSERT INTO t1 VALUES(3, 'three');
+  
+
+BEGIN
+INSERT INTO t2 VALUES('two')
+
+UPDATE t1 SET b = 'four' WHERE b = 'one'
+
+UPDATE t1 SET b = 'five' WHERE b = 'two'
+
+DELETE FROM t1 WHERE b = 'two'
+
+COMMIT
+
+
+    INSERT INTO t1 VALUES(2, 'two');
+    COMMIT;
+  
+
+
+    CREATE TABLE t1(x COLLATE NOCASE PRIMARY KEY) WITHOUT rowid;
+    CREATE TRIGGER tt1 AFTER DELETE ON t1 
+      WHEN EXISTS ( SELECT 1 FROM t2 WHERE old.x = y )
+    BEGIN
+      INSERT INTO t1 VALUES(old.x);
+    END;
+    CREATE TABLE t2(y REFERENCES t1);
+    INSERT INTO t1 VALUES('A');
+    INSERT INTO t1 VALUES('B');
+    INSERT INTO t2 VALUES('a');
+    INSERT INTO t2 VALUES('b');
+
+    SELECT * FROM t1;
+    SELECT * FROM t2;
+  
+
+ DELETE FROM t1 
+
+    SELECT * FROM t1;
+    SELECT * FROM t2;
+  
+
+
+    DROP TABLE t2;
+    CREATE TABLE t2(y REFERENCES t1 ON DELETE RESTRICT);
+    INSERT INTO t2 VALUES('a');
+    INSERT INTO t2 VALUES('b');
+  
+ DELETE FROM t1 
+
+
+    SELECT * FROM t1;
+    SELECT * FROM t2;
+  
+
+
+
+
+

@@ -1,0 +1,12 @@
+
+
+    CREATE TRIGGER aux.tr1 AFTER INSERT ON t3 BEGIN
+      INSERT INTO t3 VALUES(new.e*2, new.f*2);
+    END;
+  
+
+
+    DELETE FROM t3;
+    INSERT INTO t3 VALUES(10, 20);
+    SELECT * FROM t3;
+  

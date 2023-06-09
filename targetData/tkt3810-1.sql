@@ -1,0 +1,19 @@
+
+
+    CREATE TABLE t1(x);
+    INSERT INTO t1 VALUES(123);
+    SELECT * FROM t1;
+    CREATE TABLE t2(y);
+    CREATE TABLE t3(z);
+  
+
+
+    ATTACH ':memory:' AS aux1;
+    CREATE TABLE aux1.t1(x);
+    CREATE TEMP TRIGGER r1 DELETE ON t1 BEGIN SELECT *; END;
+    CREATE VIEW t1 AS SELECT *;
+  
+
+    CREATE VIRTUAL TABLE t2 USING nosuchmodule;
+  
+CREATE TABLE t3(z);

@@ -1,0 +1,45 @@
+
+
+  PRAGMA legacy_alter_table = 1;
+  CREATE TABLE t1(a, b, c);
+  CREATE VIEW v1 AS SELECT * FROM t2;
+
+
+
+  ALTER TABLE t1 RENAME TO t3;
+
+
+
+  ALTER TABLE t3 RENAME TO t1;
+
+
+
+  DROP VIEW v1;
+  CREATE TRIGGER tr AFTER INSERT ON t1 BEGIN
+    INSERT INTO t2 VALUES(new.a);
+  END;
+
+
+
+  ALTER TABLE t1 RENAME TO t3;
+
+
+
+  ALTER TABLE t3 RENAME TO t1;
+  DROP TRIGGER tr;
+
+  ATTACH 'test.db2' AS aux;
+  CREATE TRIGGER tr AFTER INSERT ON t1 WHEN new.a IS NULL BEGIN SELECT 1, 2, 3; END;
+
+  CREATE TABLE aux.t1(x);
+  CREATE TEMP TRIGGER tr AFTER INSERT ON aux.t1 BEGIN SELECT 1, 2, 3; END;
+
+
+
+  ALTER TABLE main.t1 RENAME TO t3;
+
+
+
+  SELECT sql FROM sqlite_temp_master;
+  SELECT sql FROM sqlite_master WHERE type='trigger';
+

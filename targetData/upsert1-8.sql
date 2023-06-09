@@ -1,0 +1,10 @@
+
+
+  DROP TABLE IF EXISTS t0;
+  CREATE TABLE t0(c0 REAL UNIQUE, c1);
+  CREATE UNIQUE INDEX test800i0 ON t0(0 || c1);
+  INSERT INTO t0(c0, c1) VALUES (1, 2),  (2, 1);
+  INSERT INTO t0(c0) VALUES (1) ON CONFLICT(c0) DO UPDATE SET c1=excluded.c0;
+  PRAGMA integrity_check;
+  REINDEX;
+

@@ -1,0 +1,8 @@
+
+BEGIN
+
+UPDATE t1 SET a=a||'x' WHERE 0
+
+UPDATE t1 SET a=a||'y' WHERE 1
+
+COMMIT

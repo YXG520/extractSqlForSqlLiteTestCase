@@ -1,0 +1,2 @@
+
+DROP INDEX index1

@@ -1,0 +1,65 @@
+
+
+    CREATE TABLE t0(a, b, c);
+    INSERT INTO t0 VALUES(1, 2, 3);
+    CREATE VIRTUAL TABLE t1 USING echo(t0);
+  
+
+ SELECT * FROM t1 
+
+ SELECT * FROM t1 
+
+ SELECT * FROM t0 
+
+ SELECT * FROM t1 
+
+ SELECT * FROM t1 
+
+ 
+    BEGIN;
+    INSERT INTO t1 VALUES(4, 5, 6);
+    SELECT * FROM t1;
+  
+
+ SELECT * FROM t1 
+
+ SELECT *  FROM t0 
+
+ SELECT * FROM t0 
+
+ COMMIT 
+ SELECT *  FROM t1 
+
+ SELECT * FROM t1 
+
+      if {$a == 1
+
+ SELECT * FROM t1 
+
+    set error [catchsql { DROP TABLE t1 
+
+
+    CREATE VIRTUAL TABLE t2 USING echo(t0);
+    CREATE VIRTUAL TABLE t3 USING echo(t0);
+  
+ SELECT * FROM t3 
+
+ 
+      SELECT * FROM t1 UNION ALL
+      SELECT * FROM t2 UNION ALL
+      SELECT * FROM t3 
+    
+
+ 
+      SELECT * FROM t1 UNION ALL
+      SELECT * FROM t2 UNION ALL
+      SELECT * FROM t3 
+    
+
+ ALTER TABLE t1 RENAME TO t4 
+ SELECT * FROM t4 
+
+ SELECT * FROM t4 
+
+ ALTER TABLE t2 RENAME TO t5 
+ SELECT * FROM t4 

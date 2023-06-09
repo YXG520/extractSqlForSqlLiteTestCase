@@ -1,0 +1,30 @@
+
+
+    CREATE TABLE a1(id INTEGER PRIMARY KEY, v);
+    CREATE TABLE a2(id INTEGER PRIMARY KEY, v);
+    INSERT INTO a1 VALUES(1, 'one');
+    INSERT INTO a1 VALUES(2, 'two');
+    INSERT INTO a2 VALUES(1, 'one');
+    INSERT INTO a2 VALUES(2, 'two');
+  
+
+
+    SELECT * FROM a2 CROSS JOIN a1 WHERE a1.id=1 AND a1.v='one';
+  
+
+
+    CREATE TEMP TABLE foo(idx INTEGER);
+    INSERT INTO foo VALUES(1);
+    INSERT INTO foo VALUES(1);
+    INSERT INTO foo VALUES(1);
+    INSERT INTO foo VALUES(2);
+    INSERT INTO foo VALUES(2);
+    CREATE TEMP TABLE bar(stuff INTEGER);
+    INSERT INTO bar VALUES(100);
+    INSERT INTO bar VALUES(200);
+    INSERT INTO bar VALUES(300);
+  
+
+
+    SELECT bar.RowID id FROM foo, bar WHERE foo.idx = bar.RowID AND id = 2;
+  

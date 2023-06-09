@@ -1,0 +1,68 @@
+
+
+    SELECT (SELECT 10);
+  
+
+
+    CREATE TABLE t3(a PRIMARY KEY, b);
+    INSERT INTO t3 VALUES(1, 2);
+    INSERT INTO t3 VALUES(3, 1);
+  
+
+
+    SELECT * FROM t3 WHERE a IN (SELECT b FROM t3);
+  
+
+
+    DROP TABLE t3;
+  
+
+
+    CREATE TABLE t3(a TEXT);
+    INSERT INTO t3 VALUES('10');
+  
+
+
+    SELECT a IN (10.0, 20) FROM t3;
+  
+
+
+    DROP TABLE t3;
+  
+
+
+    CREATE TABLE t3(a TEXT);
+    INSERT INTO t3 VALUES('XX');
+  
+
+
+    SELECT count(*) FROM t3 WHERE a IN (SELECT 'XX')
+  
+
+
+    DROP TABLE t3;
+  
+
+
+    CREATE TABLE t3(a INTEGER);
+    INSERT INTO t3 VALUES(10);
+
+    CREATE TABLE t4(x TEXT);
+    INSERT INTO t4 VALUES('10.0');
+  
+
+
+
+    CREATE INDEX t4i ON t4(x);
+    SELECT * FROM t4 WHERE x IN (SELECT a FROM t3);
+  
+
+
+    EXPLAIN QUERY PLAN
+    SELECT * FROM t4 WHERE x IN (SELECT a FROM t3);
+  
+
+
+    DROP TABLE t3;
+    DROP TABLE t4;
+  

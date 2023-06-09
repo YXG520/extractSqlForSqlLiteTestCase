@@ -1,0 +1,8 @@
+
+
+  SELECT x FROM t1 WHERE y IS NOT FALSE OR (8==$X);
+
+
+
+  SELECT x FROM t1 WHERE y IS NOT NULL OR (8==$X);
+

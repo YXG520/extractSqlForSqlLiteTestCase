@@ -1,0 +1,20 @@
+
+
+    CREATE TABLE t2 AS SELECT log AS 'x', count(*) AS 'y' FROM t1 GROUP BY log;
+    SELECT * FROM t2 ORDER BY x;
+  
+
+
+      SELECT * FROM t1 WHERE n IN (SELECT n FROM t1 INTERSECT SELECT x FROM t2)
+      ORDER BY n
+    
+
+
+      SELECT * FROM t1 WHERE n IN (SELECT n FROM t1 EXCEPT SELECT x FROM t2)
+      ORDER BY n LIMIT 2
+    
+
+
+      SELECT * FROM t1 WHERE n IN (SELECT n FROM t1 UNION SELECT x FROM t2)
+      ORDER BY n LIMIT 2
+    

@@ -1,0 +1,12 @@
+
+ CREATE TABLE t1(a INT, b INT, ex TEXT) 
+
+ CREATE INDEX i1 ON t1(a) 
+
+ CREATE INDEX i2 ON t1(a, b) 
+
+CREATE TABLE t2(c INT, d INT, ex TEXT)
+
+CREATE INDEX i3 ON t1(b)
+
+CREATE INDEX i4 ON t2(c)

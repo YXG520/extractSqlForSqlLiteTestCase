@@ -1,0 +1,12 @@
+
+
+  CREATE TABLE t2(a PRIMARY KEY, b UNIQUE);
+  INSERT INTO t2 VALUES('abc', 'def');
+
+
+
+
+  CREATE TABLE t2(a PRIMARY KEY, b UNIQUE);
+  INSERT INTO t2 VALUES('abc', 'def');
+
+

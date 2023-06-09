@@ -1,0 +1,4 @@
+
+ALTER TABLE $tbl RENAME TO xyz
+
+ALTER TABLE $tbl ADD COLUMN xyz

@@ -1,0 +1,24 @@
+
+
+    PRAGMA count_changes=OFF;
+    INSERT INTO t3 VALUES(123);
+    SELECT * FROM t3;
+  
+
+
+    DELETE FROM t3;
+  
+
+SELECT * FROM t3
+
+
+    DELETE FROM t3 WHERE 1;
+  
+
+SELECT * FROM t3
+
+
+    DELETE FROM t3 WHERE a<100;
+  
+
+SELECT * FROM t3

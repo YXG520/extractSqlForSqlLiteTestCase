@@ -1,0 +1,35 @@
+
+
+      CREATE TABLE t7(a UNIQUE PRIMARY KEY);
+      CREATE TABLE t8(a UNIQUE PRIMARY KEY ON CONFLICT ROLLBACK);
+      INSERT INTO t7 VALUES(1);
+      INSERT INTO t8 VALUES(1);
+    
+
+
+      BEGIN;
+      INSERT INTO t7 VALUES(1);
+    
+
+
+      BEGIN;
+    
+
+
+      INSERT INTO t8 VALUES(1);
+    
+
+
+      BEGIN;
+      COMMIT;
+    
+
+
+      DROP TABLE t7;
+      DROP TABLE t8;
+      CREATE TABLE t7(
+         a PRIMARY KEY ON CONFLICT FAIL, 
+         UNIQUE(a) ON CONFLICT IGNORE
+      );
+    
+

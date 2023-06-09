@@ -1,0 +1,15 @@
+
+
+  CREATE TABLE t1(a, b);
+  CREATE INDEX i1 ON t1(a, b);
+  CREATE VIRTUAL TABLE vt1 USING tcl(vtab_command t1);
+
+
+ SELECT * FROM vt1 LIMIT 10 
+
+ SELECT * FROM vt1 LIMIT 5 OFFSET 50 
+
+ SELECT * FROM vt1 ORDER BY a, b LIMIT 1 OFFSET 1 
+
+ SELECT * FROM vt1 ORDER BY a, +b LIMIT 1 OFFSET 1 
+SELECT rowid, a, b FROM $src

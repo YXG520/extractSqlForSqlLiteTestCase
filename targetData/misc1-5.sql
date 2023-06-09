@@ -1,0 +1,11 @@
+
+
+    CREATE TABLE t3(a,b);
+    INSERT INTO t3 VALUES(1,2);
+    INSERT INTO t3 VALUES(3,4);
+    UPDATE t3 SET a=0 WHEREwww b=2;
+  
+
+
+    SELECT * FROM t3 ORDER BY a;
+  

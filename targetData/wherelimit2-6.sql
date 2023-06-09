@@ -1,0 +1,14 @@
+
+
+  CREATE TABLE t2(x);  
+  INSERT INTO t2(x) VALUES(1),(2),(3),(5),(8),(13);
+
+
+
+  WITH t2 AS MATERIALIZED (VALUES(5))
+  DELETE FROM t2 ORDER BY rank()OVER() LIMIT 2;
+
+
+
+  SELECT * FROM t2;
+

@@ -1,0 +1,12 @@
+
+
+    CREATE TABLE t1(x);
+    CREATE TABLE t2(y);
+  
+CREATE TRIGGER r${nStatement} AFTER INSERT ON t1 BEGIN\n
+  INSERT INTO t2 VALUES($i);\n
+END;
+
+    INSERT INTO t1 VALUES(5);
+    SELECT count(*) FROM t2;
+  

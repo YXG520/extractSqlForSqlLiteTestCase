@@ -1,0 +1,2 @@
+
+SELECT raise(abort,'message');

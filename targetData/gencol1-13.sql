@@ -1,0 +1,28 @@
+
+
+  CREATE TABLE t1(x, y AS(x+1));
+  INSERT INTO t1 VALUES(10);
+  SELECT y FROM t1 JOIN t1 USING (y,y);
+
+
+
+  SELECT 123 FROM t1 JOIN t1 USING (x);
+
+
+
+  SELECT 456 FROM t1 JOIN t1 USING (x,x);
+
+
+
+  CREATE INDEX t1y ON t1(y);
+  SELECT y FROM t1 JOIN t1 USING (y,y);
+
+
+
+  CREATE INDEX t1x ON t1(x);
+  SELECT 123 FROM t1 JOIN t1 USING (x);
+
+
+
+  SELECT 456 FROM t1 JOIN t1 USING (x,x);
+

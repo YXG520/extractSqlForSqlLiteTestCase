@@ -1,0 +1,38 @@
+
+BEGIN TRANSACTION
+UPDATE t1 SET a = 0 WHERE 0
+BEGIN TRANSACTION
+UPDATE t1 SET a = 0 WHERE 0
+ROLLBACK
+
+SELECT * FROM t2
+
+
+BEGIN; SELECT rowid FROM sqlite_master LIMIT 1
+
+UPDATE t1 SET a=b, b=a
+
+BEGIN; SELECT rowid FROM sqlite_master LIMIT 1
+UPDATE t1 SET a=b, b=a
+ROLLBACK
+
+SELECT * FROM t1
+ROLLBACK
+
+UPDATE t1 SET a = 0 WHERE 0
+BEGIN EXCLUSIVE;
+
+PRAGMA busy_timeout
+
+
+PRAGMA busy_timeout
+
+PRAGMA busy_timeout(400)
+UPDATE t1 SET a = 0 WHERE 0
+BEGIN EXCLUSIVE;
+
+PRAGMA busy_timeout
+
+PRAGMA busy_timeout(0)
+
+PRAGMA busy_timeout

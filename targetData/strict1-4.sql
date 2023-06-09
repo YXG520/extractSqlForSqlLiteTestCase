@@ -1,0 +1,10 @@
+
+
+  DELETE FROM t1;
+  INSERT INTO t1(c) VALUES(x'313233'), (NULL);
+  SELECT typeof(c), c FROM t1;
+
+
+
+  INSERT INTO t1(c) VALUES('456');
+

@@ -1,0 +1,14 @@
+
+
+  CREATE TABLE t1(a,b,c,d);
+  CREATE INDEX t1abc ON t1(a,b,c);
+  CREATE INDEX t1bc ON t1(b,c);
+
+  EXPLAIN QUERY PLAN
+  SELECT d FROM t1 WHERE a=? AND b=? AND c>=? ORDER BY c;
+
+
+
+  EXPLAIN QUERY PLAN
+  SELECT d FROM t1 WHERE a=? AND b=? AND c>=? ORDER BY c;
+

@@ -1,0 +1,13 @@
+
+
+    CREATE TABLE t1(a);
+    INSERT INTO t1 VALUES(1);
+    INSERT INTO t1 VALUES(1);
+    SELECT * FROM t1;
+  
+
+
+    BEGIN;
+    CREATE UNIQUE INDEX i1 ON t1(a);
+  
+

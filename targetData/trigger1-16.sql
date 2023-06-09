@@ -1,0 +1,47 @@
+
+
+    CREATE TABLE t16(a,b,c);
+    CREATE INDEX t16a ON t16(a);
+    CREATE INDEX t16b ON t16(b);
+  
+
+    CREATE TRIGGER main.t16err1 AFTER INSERT ON tA BEGIN
+      INSERT INTO main.t16 VALUES(1,2,3);
+    END;
+  
+
+
+    CREATE TRIGGER main.t16err2 AFTER INSERT ON tA BEGIN
+      UPDATE main.t16 SET rowid=rowid+1;
+    END;
+  
+
+
+    CREATE TRIGGER main.t16err3 AFTER INSERT ON tA BEGIN
+      DELETE FROM main.t16;
+    END;
+  
+
+
+    CREATE TRIGGER main.t16err4 AFTER INSERT ON tA BEGIN
+      UPDATE t16 NOT INDEXED SET rowid=rowid+1;
+    END;
+  
+
+
+    CREATE TRIGGER main.t16err5 AFTER INSERT ON tA BEGIN
+      UPDATE t16 INDEXED BY t16a SET rowid=rowid+1 WHERE a=1;
+    END;
+  
+
+
+    CREATE TRIGGER main.t16err6 AFTER INSERT ON tA BEGIN
+      DELETE FROM t16 NOT INDEXED WHERE a=123;
+    END;
+  
+
+
+    CREATE TRIGGER main.t16err7 AFTER INSERT ON tA BEGIN
+      DELETE FROM t16 INDEXED BY t16a WHERE a=123;
+    END;
+  

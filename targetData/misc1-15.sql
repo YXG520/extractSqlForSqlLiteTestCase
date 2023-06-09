@@ -1,0 +1,16 @@
+
+
+    CREATE TABLE t10 AS SELECT c1;
+  
+
+
+    CREATE TABLE t10 AS SELECT t9.c1;
+  
+
+
+    CREATE TABLE t10 AS SELECT main.t9.c1;
+  
+
+
+    CREATE TABLE t10 AS SELECT 1;
+  

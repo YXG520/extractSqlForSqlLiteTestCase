@@ -1,0 +1,44 @@
+
+
+    CREATE TABLE t4(x,y);
+    INSERT INTO t4 VALUES(1,11);
+    INSERT INTO t4 VALUES(2,NULL);
+    SELECT x FROM t4 WHERE y=NULL;
+  
+
+
+      SELECT x FROM t4 WHERE y IN (33,NULL);
+    
+
+
+    SELECT x FROM t4 WHERE y<33 ORDER BY x;
+  
+
+
+    SELECT x FROM t4 WHERE y>6 ORDER BY x;
+  
+
+
+    SELECT x FROM t4 WHERE y!=33 ORDER BY x;
+  
+
+
+    CREATE INDEX t4i1 ON t4(y);
+    SELECT x FROM t4 WHERE y=NULL;
+  
+
+
+      SELECT x FROM t4 WHERE y IN (33,NULL);
+    
+
+
+    SELECT x FROM t4 WHERE y<33 ORDER BY x;
+  
+
+
+    SELECT x FROM t4 WHERE y>6 ORDER BY x;
+  
+
+
+    SELECT x FROM t4 WHERE y!=33 ORDER BY x;
+  

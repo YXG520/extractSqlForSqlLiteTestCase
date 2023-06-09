@@ -1,0 +1,154 @@
+
+
+    CREATE TABLE t2(x,y);
+    INSERT INTO t2 VALUES(1,2);
+    INSERT INTO t2 SELECT x+2, y+2 FROM t2;
+    INSERT INTO t2 SELECT x+4, y+4 FROM t2;
+    INSERT INTO t2 SELECT x+8, y+8 FROM t2;
+    INSERT INTO t2 SELECT x+16, y+16 FROM t2;
+    INSERT INTO t2 SELECT x+32, y+32 FROM t2;
+    INSERT INTO t2 SELECT x+64, y+64 FROM t2;
+    SELECT count(*), sum(x), sum(y) FROM t2;
+  
+
+
+    SELECT 1 FROM t2 WHERE x=0
+    UNION ALL
+    SELECT 2 FROM t2 WHERE x=1
+    UNION ALL
+    SELECT 3 FROM t2 WHERE x=2
+    UNION ALL
+    SELECT 4 FROM t2 WHERE x=3
+    UNION ALL
+    SELECT 5 FROM t2 WHERE x=4
+    UNION ALL
+    SELECT 6 FROM t2 WHERE y=0
+    UNION ALL
+    SELECT 7 FROM t2 WHERE y=1
+    UNION ALL
+    SELECT 8 FROM t2 WHERE y=2
+    UNION ALL
+    SELECT 9 FROM t2 WHERE y=3
+    UNION ALL
+    SELECT 10 FROM t2 WHERE y=4
+  
+
+
+    SELECT (
+      SELECT 1 FROM t2 WHERE x=0
+      UNION ALL
+      SELECT 2 FROM t2 WHERE x=1
+      UNION ALL
+      SELECT 3 FROM t2 WHERE x=2
+      UNION ALL
+      SELECT 4 FROM t2 WHERE x=3
+      UNION ALL
+      SELECT 5 FROM t2 WHERE x=4
+      UNION ALL
+      SELECT 6 FROM t2 WHERE y=0
+      UNION ALL
+      SELECT 7 FROM t2 WHERE y=1
+      UNION ALL
+      SELECT 8 FROM t2 WHERE y=2
+      UNION ALL
+      SELECT 9 FROM t2 WHERE y=3
+      UNION ALL
+      SELECT 10 FROM t2 WHERE y=4
+    )
+  
+
+
+    SELECT (
+      SELECT 1 FROM t2 WHERE x=0
+      UNION ALL
+      SELECT 2 FROM t2 WHERE x=-1
+      UNION ALL
+      SELECT 3 FROM t2 WHERE x=2
+      UNION ALL
+      SELECT 4 FROM t2 WHERE x=3
+      UNION ALL
+      SELECT 5 FROM t2 WHERE x=4
+      UNION ALL
+      SELECT 6 FROM t2 WHERE y=0
+      UNION ALL
+      SELECT 7 FROM t2 WHERE y=1
+      UNION ALL
+      SELECT 8 FROM t2 WHERE y=2
+      UNION ALL
+      SELECT 9 FROM t2 WHERE y=3
+      UNION ALL
+      SELECT 10 FROM t2 WHERE y=4
+    )
+  
+
+
+    SELECT (
+      SELECT 1 FROM t2 WHERE x=0
+      UNION ALL
+      SELECT 2 FROM t2 WHERE x=-1
+      UNION ALL
+      SELECT 3 FROM t2 WHERE x=2
+      UNION ALL
+      SELECT 4 FROM t2 WHERE x=-1
+      UNION ALL
+      SELECT 5 FROM t2 WHERE x=4
+      UNION ALL
+      SELECT 6 FROM t2 WHERE y=0
+      UNION ALL
+      SELECT 7 FROM t2 WHERE y=1
+      UNION ALL
+      SELECT 8 FROM t2 WHERE y=2
+      UNION ALL
+      SELECT 9 FROM t2 WHERE y=3
+      UNION ALL
+      SELECT 10 FROM t2 WHERE y=-4
+    )
+  
+
+
+    SELECT (
+      SELECT 1 FROM t2 WHERE x=0
+      UNION ALL
+      SELECT 2 FROM t2 WHERE x=-1
+      UNION ALL
+      SELECT 3 FROM t2 WHERE x=2
+      UNION ALL
+      SELECT 4 FROM t2 WHERE x=-2
+      UNION ALL
+      SELECT 5 FROM t2 WHERE x=4
+      UNION ALL
+      SELECT 6 FROM t2 WHERE y=0
+      UNION ALL
+      SELECT 7 FROM t2 WHERE y=1
+      UNION ALL
+      SELECT 8 FROM t2 WHERE y=-3
+      UNION ALL
+      SELECT 9 FROM t2 WHERE y=3
+      UNION ALL
+      SELECT 10 FROM t2 WHERE y=4
+    )
+  
+
+
+    SELECT (
+      SELECT 1 FROM t2 WHERE x=0
+      UNION ALL
+      SELECT 2 FROM t2 WHERE x=-1
+      UNION ALL
+      SELECT 3 FROM t2 WHERE x=2
+      UNION ALL
+      SELECT 4 FROM t2 WHERE x=-2
+      UNION ALL
+      SELECT 5 FROM t2 WHERE x=4
+      UNION ALL
+      SELECT 6 FROM t2 WHERE y=0
+      UNION ALL
+      SELECT 7 FROM t2 WHERE y=1
+      UNION ALL
+      SELECT 8 FROM t2 WHERE y=-3
+      UNION ALL
+      SELECT 9 FROM t2 WHERE y=3
+      UNION ALL
+      SELECT 10 FROM t2 WHERE y=-4
+    )
+  

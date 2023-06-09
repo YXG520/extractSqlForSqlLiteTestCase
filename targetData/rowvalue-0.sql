@@ -1,0 +1,5 @@
+
+
+  CREATE TABLE one(o);
+  INSERT INTO one VALUES(1);
+

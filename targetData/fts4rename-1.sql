@@ -1,0 +1,16 @@
+
+
+  CREATE VIRTUAL TABLE temp.t1 USING fts3(a);
+  BEGIN;
+  CREATE TABLE t2(x);
+
+
+
+
+  UPDATE t1 SET Col0 = 1 ;
+
+
+
+  ROLLBACK;
+  DROP TABLE t1;
+

@@ -1,0 +1,52 @@
+
+
+    BEGIN;
+    CREATE TABLE t5(a INTEGER PRIMARY KEY);
+    CREATE TABLE t6(a INTEGER);
+    INSERT INTO t6 VALUES(NULL);
+    INSERT INTO t6 VALUES(NULL);
+    INSERT INTO t6 SELECT * FROM t6;
+    INSERT INTO t6 SELECT * FROM t6;
+    INSERT INTO t6 SELECT * FROM t6;
+    INSERT INTO t6 SELECT * FROM t6;
+    INSERT INTO t6 SELECT * FROM t6;
+    INSERT INTO t6 SELECT * FROM t6;
+    COMMIT;
+  
+
+    SELECT * FROM t6 NATURAL JOIN t5;
+  
+
+
+    SELECT * FROM t6, t5 WHERE t6.a<t5.a;
+  
+
+
+    SELECT * FROM t6, t5 WHERE t6.a>t5.a;
+  
+
+
+    UPDATE t6 SET a='xyz';
+    SELECT * FROM t6 NATURAL JOIN t5;
+  
+
+
+    SELECT * FROM t6, t5 WHERE t6.a<t5.a;
+  
+
+
+    SELECT * FROM t6, t5 WHERE t6.a>t5.a;
+  
+
+
+    UPDATE t6 SET a=1;
+    SELECT * FROM t6 NATURAL JOIN t5;
+  
+
+
+    SELECT * FROM t6, t5 WHERE t6.a<t5.a;
+  
+
+
+    SELECT * FROM t6, t5 WHERE t6.a>t5.a;
+  

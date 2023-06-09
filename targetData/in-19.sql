@@ -1,0 +1,31 @@
+
+
+  DROP TABLE IF EXISTS t0;
+  CREATE TABLE t0(c0 REAL UNIQUE);
+  INSERT INTO t0(c0) VALUES(2.0625E00);
+  SELECT 1 FROM t0 WHERE c0 IN ('2.0625');
+
+
+
+  SELECT c0 IN ('2.0625') FROM t0;
+
+
+
+  SELECT c0 = ('2.0625') FROM t0;
+
+
+
+  SELECT c0 = ('0.20625e+01') FROM t0;
+
+
+
+  SELECT c0 IN ('2.0625',2,3) FROM t0;
+
+
+
+  DROP TABLE t0;
+  CREATE TABLE t0(c0 TEXT, c1 REAL, c2, PRIMARY KEY(c2, c0, c1));
+  CREATE INDEX i0 ON t0(c1 IN (c0));
+  INSERT INTO t0(c0, c2) VALUES (0, NULL) ON CONFLICT(c2, c1, c0) DO NOTHING;
+  PRAGMA integrity_check;
+

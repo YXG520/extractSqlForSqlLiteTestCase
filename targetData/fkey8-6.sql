@@ -1,0 +1,18 @@
+
+
+  PRAGMA foreign_keys = on;
+  CREATE TABLE c1(b);
+  INSERT INTO c1 VALUES(123);
+
+
+
+  ATTACH 'test.db2' AS aux;
+  CREATE TABLE aux.p1(a INTEGER PRIMARY KEY);
+  CREATE TABLE aux.c1(b REFERENCES p1(a) ON DELETE RESTRICT);
+
+  INSERT INTO aux.p1 VALUES(123);
+
+
+
+  DELETE FROM aux.p1 WHERE a=123;
+

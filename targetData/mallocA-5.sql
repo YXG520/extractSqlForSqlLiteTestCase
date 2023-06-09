@@ -1,0 +1,4 @@
+
+
+    REINDEX nocase;
+  

@@ -1,0 +1,37 @@
+
+
+    CREATE TABLE t4(a NUM,b);
+    INSERT INTO t4 VALUES('0.0',1);
+    INSERT INTO t4 VALUES('0.00',2);
+    INSERT INTO t4 VALUES('abc',3);
+    INSERT INTO t4 VALUES('-1.0',4);
+    INSERT INTO t4 VALUES('+1.0',5);
+    INSERT INTO t4 VALUES('0',6);
+    INSERT INTO t4 VALUES('00000',7);
+    SELECT a FROM t4 ORDER BY b;
+  
+
+
+    SELECT a FROM t4 WHERE a==0 ORDER BY b
+  
+
+
+    SELECT a FROM t4 WHERE a<0.5 ORDER BY b
+  
+
+
+    SELECT a FROM t4 WHERE a>-0.5 ORDER BY b
+  
+
+
+    CREATE INDEX t4i1 ON t4(a);
+    SELECT a FROM t4 WHERE a==0 ORDER BY b
+  
+
+
+    SELECT a FROM t4 WHERE a<0.5 ORDER BY b
+  
+
+
+    SELECT a FROM t4 WHERE a>-0.5 ORDER BY b
+  

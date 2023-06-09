@@ -1,0 +1,9 @@
+
+
+  CREATE TABLE c1(a);
+  INSERT INTO c1 VALUES(1), (2), (4), (3);
+
+
+
+  SELECT * FROM c1 WHERE a IN (SELECT a FROM c1) ORDER BY 1
+

@@ -1,0 +1,8 @@
+
+
+    PRAGMA encoding='UTF16';
+  
+
+ CREATE VIRTUAL TABLE %C8 USING fts3 
+
+ CREATE VIRTUAL TABLE %C9 USING s 

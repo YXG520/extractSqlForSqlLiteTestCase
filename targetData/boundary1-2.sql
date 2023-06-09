@@ -1,0 +1,6036 @@
+
+
+    SELECT * FROM t1 WHERE rowid=72057594037927935
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='00ffffffffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=17
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 72057594037927935 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 72057594037927935 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 72057594037927935 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 72057594037927935 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 72057594037927935 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 72057594037927935 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 72057594037927935 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 72057594037927935 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 72057594037927935 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 72057594037927935 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 72057594037927935 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 72057594037927935 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 72057594037927935 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 72057594037927935 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 72057594037927935 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 72057594037927935 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 72057594037927935 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 72057594037927935 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 72057594037927935 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 72057594037927935 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=16384
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000004000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=16
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16384 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16384 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16384 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16384 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16384 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16384 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16384 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16384 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16384 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16384 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16384 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16384 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16384 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16384 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16384 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16384 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16384 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16384 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16384 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16384 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=4294967296
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000100000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=36
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4294967296 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4294967296 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4294967296 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4294967296 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4294967296 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4294967296 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4294967296 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4294967296 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4294967296 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4294967296 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4294967296 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4294967296 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4294967296 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4294967296 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4294967296 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4294967296 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4294967296 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4294967296 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4294967296 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4294967296 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=16777216
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000001000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=6
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16777216 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16777216 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16777216 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16777216 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16777216 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16777216 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16777216 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16777216 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16777216 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16777216 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16777216 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16777216 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16777216 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16777216 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16777216 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16777216 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16777216 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16777216 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16777216 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16777216 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-32769
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffffffffffff7fff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=29
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -32769 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -32769 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -32769 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -32769 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -32769 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -32769 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -32769 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -32769 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -32769 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -32769 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -32769 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -32769 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -32769 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -32769 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -32769 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -32769 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -32769 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -32769 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -32769 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -32769 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-140737488355329
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffff7fffffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=21
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -140737488355329 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -140737488355329 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -140737488355329 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -140737488355329 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -140737488355329 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -140737488355329 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -140737488355329 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -140737488355329 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -140737488355329 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -140737488355329 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -140737488355329 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -140737488355329 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -140737488355329 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -140737488355329 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -140737488355329 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -140737488355329 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -140737488355329 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -140737488355329 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -140737488355329 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -140737488355329 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=2
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000000002'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=41
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=4
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000000004'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=31
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=562949953421311
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0001ffffffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=13
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 562949953421311 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 562949953421311 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 562949953421311 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 562949953421311 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 562949953421311 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 562949953421311 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 562949953421311 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 562949953421311 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 562949953421311 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 562949953421311 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 562949953421311 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 562949953421311 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 562949953421311 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 562949953421311 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 562949953421311 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 562949953421311 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 562949953421311 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 562949953421311 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 562949953421311 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 562949953421311 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=256
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000000100'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=61
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 256 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 256 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 256 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 256 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 256 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 256 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 256 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 256 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 256 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 256 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 256 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 256 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 256 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 256 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 256 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 256 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 256 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 256 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 256 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 256 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=34359738368
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000800000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=22
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 34359738368 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 34359738368 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 34359738368 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 34359738368 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 34359738368 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 34359738368 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 34359738368 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 34359738368 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 34359738368 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 34359738368 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 34359738368 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 34359738368 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 34359738368 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 34359738368 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 34359738368 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 34359738368 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 34359738368 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 34359738368 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 34359738368 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 34359738368 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=65536
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000010000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=62
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 65536 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 65536 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 65536 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 65536 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 65536 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 65536 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 65536 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 65536 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 65536 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 65536 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 65536 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 65536 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 65536 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 65536 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 65536 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 65536 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 65536 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 65536 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 65536 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 65536 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=268435456
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000010000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=40
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 268435456 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 268435456 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 268435456 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 268435456 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 268435456 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 268435456 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 268435456 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 268435456 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 268435456 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 268435456 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 268435456 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 268435456 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 268435456 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 268435456 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 268435456 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 268435456 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 268435456 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 268435456 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 268435456 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 268435456 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-140737488355328
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffff800000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=44
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -140737488355328 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -140737488355328 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -140737488355328 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -140737488355328 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -140737488355328 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -140737488355328 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -140737488355328 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -140737488355328 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -140737488355328 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -140737488355328 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -140737488355328 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -140737488355328 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -140737488355328 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -140737488355328 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -140737488355328 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -140737488355328 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -140737488355328 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -140737488355328 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -140737488355328 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -140737488355328 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=1099511627776
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000010000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=19
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1099511627776 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1099511627776 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1099511627776 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1099511627776 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1099511627776 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1099511627776 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1099511627776 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1099511627776 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1099511627776 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1099511627776 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1099511627776 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1099511627776 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1099511627776 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1099511627776 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1099511627776 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1099511627776 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1099511627776 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1099511627776 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1099511627776 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1099511627776 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 9223372036854775807 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 9223372036854775807 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 9223372036854775807 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 9223372036854775807 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 9223372036854775807 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 9223372036854775807 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 9223372036854775807 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 9223372036854775807 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 9223372036854775807 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 9223372036854775807 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 9223372036854775807 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 9223372036854775807 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 9223372036854775807 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 9223372036854775807 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 9223372036854775807 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 9223372036854775807 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 9223372036854775807 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 9223372036854775807 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 9223372036854775807 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 9223372036854775807 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=32768
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000008000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=50
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 32768 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 32768 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 32768 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 32768 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 32768 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 32768 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 32768 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 32768 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 32768 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 32768 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 32768 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 32768 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 32768 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 32768 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 32768 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 32768 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 32768 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 32768 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 32768 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 32768 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-36028797018963968
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ff80000000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=64
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -36028797018963968 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -36028797018963968 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -36028797018963968 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -36028797018963968 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -36028797018963968 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -36028797018963968 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -36028797018963968 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -36028797018963968 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -36028797018963968 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -36028797018963968 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -36028797018963968 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -36028797018963968 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -36028797018963968 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -36028797018963968 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -36028797018963968 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -36028797018963968 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -36028797018963968 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -36028797018963968 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -36028797018963968 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -36028797018963968 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=65535
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='000000000000ffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=48
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 65535 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 65535 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 65535 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 65535 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 65535 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 65535 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 65535 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 65535 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 65535 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 65535 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 65535 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 65535 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 65535 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 65535 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 65535 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 65535 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 65535 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 65535 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 65535 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 65535 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=4294967295
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='00000000ffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=14
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4294967295 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4294967295 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4294967295 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4294967295 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4294967295 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4294967295 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4294967295 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4294967295 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4294967295 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4294967295 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4294967295 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4294967295 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4294967295 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4294967295 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4294967295 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4294967295 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4294967295 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4294967295 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4294967295 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4294967295 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=1099511627775
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='000000ffffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=57
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1099511627775 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1099511627775 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1099511627775 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1099511627775 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1099511627775 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1099511627775 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1099511627775 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1099511627775 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1099511627775 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1099511627775 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1099511627775 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1099511627775 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1099511627775 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1099511627775 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1099511627775 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1099511627775 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1099511627775 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1099511627775 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1099511627775 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1099511627775 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-8388608
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffffffffff800000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=37
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -8388608 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -8388608 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -8388608 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -8388608 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -8388608 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -8388608 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -8388608 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -8388608 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -8388608 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -8388608 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -8388608 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -8388608 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -8388608 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -8388608 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -8388608 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -8388608 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -8388608 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -8388608 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -8388608 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -8388608 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=549755813888
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000008000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=35
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 549755813888 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 549755813888 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 549755813888 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 549755813888 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 549755813888 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 549755813888 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 549755813888 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 549755813888 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 549755813888 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 549755813888 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 549755813888 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 549755813888 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 549755813888 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 549755813888 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 549755813888 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 549755813888 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 549755813888 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 549755813888 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 549755813888 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 549755813888 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=8388607
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='00000000007fffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=18
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 8388607 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 8388607 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 8388607 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 8388607 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 8388607 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 8388607 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 8388607 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 8388607 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 8388607 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 8388607 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 8388607 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 8388607 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 8388607 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 8388607 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 8388607 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 8388607 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 8388607 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 8388607 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 8388607 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 8388607 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-3
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='fffffffffffffffd'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=52
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -3 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -3 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -3 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -3 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -3 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -3 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -3 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -3 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -3 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -3 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -3 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -3 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -3 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -3 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -3 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -3 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -3 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -3 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -3 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -3 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=0
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=59
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 0 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 0 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 0 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 0 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 0 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 0 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 0 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 0 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 0 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 0 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 0 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 0 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 0 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 0 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 0 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 0 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 0 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 0 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 0 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 0 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-1
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffffffffffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=38
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -1 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -1 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -1 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -1 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -1 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -1 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -1 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -1 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -1 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -1 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -1 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -1 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -1 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -1 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -1 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -1 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -1 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -1 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -1 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -1 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-2
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='fffffffffffffffe'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=33
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=2097152
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000200000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=42
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2097152 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2097152 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2097152 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2097152 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2097152 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2097152 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2097152 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2097152 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2097152 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2097152 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2097152 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2097152 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2097152 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2097152 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2097152 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2097152 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2097152 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2097152 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2097152 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2097152 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=128
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000000080'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=49
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 128 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 128 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 128 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 128 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 128 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 128 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 128 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 128 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 128 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 128 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 128 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 128 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 128 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 128 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 128 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 128 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 128 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 128 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 128 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 128 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=255
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='00000000000000ff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=30
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 255 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 255 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 255 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 255 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 255 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 255 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 255 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 255 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 255 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 255 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 255 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 255 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 255 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 255 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 255 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 255 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 255 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 255 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 255 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 255 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-2147483648
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffffffff80000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=11
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2147483648 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2147483648 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2147483648 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2147483648 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2147483648 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2147483648 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2147483648 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2147483648 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2147483648 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2147483648 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2147483648 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2147483648 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2147483648 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2147483648 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2147483648 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2147483648 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2147483648 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2147483648 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2147483648 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2147483648 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=34359738367
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='00000007ffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=39
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 34359738367 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 34359738367 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 34359738367 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 34359738367 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 34359738367 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 34359738367 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 34359738367 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 34359738367 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 34359738367 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 34359738367 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 34359738367 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 34359738367 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 34359738367 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 34359738367 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 34359738367 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 34359738367 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 34359738367 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 34359738367 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 34359738367 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 34359738367 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-549755813889
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffffff7fffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=58
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -549755813889 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -549755813889 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -549755813889 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -549755813889 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -549755813889 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -549755813889 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -549755813889 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -549755813889 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -549755813889 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -549755813889 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -549755813889 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -549755813889 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -549755813889 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -549755813889 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -549755813889 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -549755813889 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -549755813889 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -549755813889 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -549755813889 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -549755813889 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-32768
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffffffffffff8000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=32
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -32768 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -32768 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -32768 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -32768 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -32768 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -32768 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -32768 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -32768 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -32768 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -32768 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -32768 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -32768 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -32768 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -32768 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -32768 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -32768 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -32768 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -32768 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -32768 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -32768 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=2147483647
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='000000007fffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=20
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2147483647 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2147483647 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2147483647 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2147483647 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2147483647 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2147483647 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2147483647 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2147483647 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2147483647 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2147483647 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2147483647 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2147483647 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2147483647 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2147483647 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2147483647 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2147483647 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2147483647 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2147483647 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2147483647 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2147483647 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-129
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffffffffffffff7f'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=54
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -129 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -129 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -129 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -129 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -129 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -129 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -129 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -129 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -129 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -129 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -129 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -129 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -129 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -129 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -129 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -129 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -129 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -129 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -129 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -129 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-128
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffffffffffffff80'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=53
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -128 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -128 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -128 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -128 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -128 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -128 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -128 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -128 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -128 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -128 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -128 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -128 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -128 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -128 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -128 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -128 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -128 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -128 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -128 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -128 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=72057594037927936
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0100000000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=28
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 72057594037927936 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 72057594037927936 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 72057594037927936 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 72057594037927936 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 72057594037927936 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 72057594037927936 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 72057594037927936 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 72057594037927936 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 72057594037927936 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 72057594037927936 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 72057594037927936 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 72057594037927936 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 72057594037927936 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 72057594037927936 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 72057594037927936 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 72057594037927936 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 72057594037927936 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 72057594037927936 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 72057594037927936 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 72057594037927936 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=2147483648
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000080000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=51
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2147483648 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2147483648 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2147483648 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2147483648 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2147483648 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2147483648 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2147483648 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2147483648 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2147483648 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2147483648 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2147483648 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2147483648 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2147483648 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2147483648 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2147483648 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2147483648 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2147483648 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2147483648 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2147483648 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2147483648 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=549755813887
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000007fffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=46
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 549755813887 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 549755813887 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 549755813887 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 549755813887 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 549755813887 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 549755813887 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 549755813887 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 549755813887 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 549755813887 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 549755813887 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 549755813887 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 549755813887 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 549755813887 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 549755813887 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 549755813887 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 549755813887 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 549755813887 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 549755813887 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 549755813887 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 549755813887 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-549755813888
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffffff8000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=63
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -549755813888 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -549755813888 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -549755813888 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -549755813888 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -549755813888 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -549755813888 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -549755813888 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -549755813888 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -549755813888 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -549755813888 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -549755813888 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -549755813888 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -549755813888 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -549755813888 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -549755813888 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -549755813888 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -549755813888 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -549755813888 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -549755813888 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -549755813888 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=281474976710655
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000ffffffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=10
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 281474976710655 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 281474976710655 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 281474976710655 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 281474976710655 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 281474976710655 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 281474976710655 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 281474976710655 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 281474976710655 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 281474976710655 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 281474976710655 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 281474976710655 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 281474976710655 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 281474976710655 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 281474976710655 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 281474976710655 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 281474976710655 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 281474976710655 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 281474976710655 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 281474976710655 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 281474976710655 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=4398046511103
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='000003ffffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=7
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4398046511103 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4398046511103 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4398046511103 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4398046511103 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4398046511103 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4398046511103 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4398046511103 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4398046511103 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4398046511103 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4398046511103 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4398046511103 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4398046511103 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4398046511103 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4398046511103 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4398046511103 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4398046511103 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4398046511103 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4398046511103 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4398046511103 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4398046511103 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=268435455
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='000000000fffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=12
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 268435455 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 268435455 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 268435455 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 268435455 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 268435455 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 268435455 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 268435455 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 268435455 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 268435455 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 268435455 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 268435455 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 268435455 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 268435455 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 268435455 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 268435455 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 268435455 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 268435455 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 268435455 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 268435455 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 268435455 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-9223372036854775808
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='8000000000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=55
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -9223372036854775808 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -9223372036854775808 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -9223372036854775808 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -9223372036854775808 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -9223372036854775808 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -9223372036854775808 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -9223372036854775808 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -9223372036854775808 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -9223372036854775808 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -9223372036854775808 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -9223372036854775808 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -9223372036854775808 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -9223372036854775808 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -9223372036854775808 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -9223372036854775808 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -9223372036854775808 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -9223372036854775808 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -9223372036854775808 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -9223372036854775808 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -9223372036854775808 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=562949953421312
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0002000000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=43
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 562949953421312 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 562949953421312 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 562949953421312 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 562949953421312 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 562949953421312 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 562949953421312 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 562949953421312 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 562949953421312 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 562949953421312 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 562949953421312 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 562949953421312 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 562949953421312 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 562949953421312 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 562949953421312 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 562949953421312 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 562949953421312 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 562949953421312 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 562949953421312 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 562949953421312 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 562949953421312 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-8388609
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffffffffff7fffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=1
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -8388609 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -8388609 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -8388609 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -8388609 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -8388609 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -8388609 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -8388609 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -8388609 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -8388609 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -8388609 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -8388609 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -8388609 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -8388609 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -8388609 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -8388609 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -8388609 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -8388609 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -8388609 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -8388609 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -8388609 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=16777215
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000ffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=9
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16777215 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16777215 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16777215 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16777215 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16777215 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16777215 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16777215 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16777215 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16777215 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16777215 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16777215 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16777215 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16777215 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16777215 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16777215 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16777215 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16777215 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16777215 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16777215 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16777215 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=8388608
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000800000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=24
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 8388608 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 8388608 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 8388608 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 8388608 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 8388608 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 8388608 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 8388608 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 8388608 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 8388608 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 8388608 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 8388608 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 8388608 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 8388608 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 8388608 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 8388608 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 8388608 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 8388608 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 8388608 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 8388608 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 8388608 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=16383
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000003fff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=8
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16383 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16383 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16383 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16383 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 16383 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16383 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16383 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16383 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16383 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 16383 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16383 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16383 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16383 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16383 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 16383 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16383 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16383 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16383 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16383 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 16383 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=140737488355328
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000800000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=34
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 140737488355328 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 140737488355328 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 140737488355328 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 140737488355328 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 140737488355328 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 140737488355328 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 140737488355328 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 140737488355328 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 140737488355328 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 140737488355328 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 140737488355328 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 140737488355328 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 140737488355328 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 140737488355328 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 140737488355328 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 140737488355328 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 140737488355328 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 140737488355328 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 140737488355328 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 140737488355328 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=2097151
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='00000000001fffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=15
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2097151 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2097151 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2097151 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2097151 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 2097151 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2097151 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2097151 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2097151 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2097151 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 2097151 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2097151 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2097151 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2097151 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2097151 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 2097151 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2097151 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2097151 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2097151 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2097151 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 2097151 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=140737488355327
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='00007fffffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=25
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 140737488355327 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 140737488355327 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 140737488355327 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 140737488355327 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 140737488355327 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 140737488355327 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 140737488355327 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 140737488355327 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 140737488355327 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 140737488355327 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 140737488355327 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 140737488355327 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 140737488355327 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 140737488355327 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 140737488355327 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 140737488355327 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 140737488355327 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 140737488355327 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 140737488355327 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 140737488355327 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=281474976710656
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0001000000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=26
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 281474976710656 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 281474976710656 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 281474976710656 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 281474976710656 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 281474976710656 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 281474976710656 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 281474976710656 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 281474976710656 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 281474976710656 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 281474976710656 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 281474976710656 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 281474976710656 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 281474976710656 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 281474976710656 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 281474976710656 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 281474976710656 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 281474976710656 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 281474976710656 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 281474976710656 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 281474976710656 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=32767
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000007fff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=23
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 32767 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 32767 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 32767 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 32767 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 32767 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 32767 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 32767 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 32767 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 32767 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 32767 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 32767 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 32767 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 32767 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 32767 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 32767 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 32767 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 32767 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 32767 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 32767 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 32767 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=127
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='000000000000007f'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=4
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 127 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 127 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 127 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 127 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 127 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 127 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 127 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 127 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 127 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 127 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 127 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 127 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 127 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 127 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 127 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 127 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 127 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 127 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 127 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 127 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=36028797018963967
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='007fffffffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=27
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 36028797018963967 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 36028797018963967 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 36028797018963967 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 36028797018963967 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 36028797018963967 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 36028797018963967 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 36028797018963967 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 36028797018963967 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 36028797018963967 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 36028797018963967 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 36028797018963967 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 36028797018963967 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 36028797018963967 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 36028797018963967 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 36028797018963967 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 36028797018963967 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 36028797018963967 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 36028797018963967 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 36028797018963967 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 36028797018963967 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=4398046511104
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000040000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=56
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4398046511104 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4398046511104 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4398046511104 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4398046511104 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 4398046511104 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4398046511104 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4398046511104 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4398046511104 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4398046511104 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 4398046511104 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4398046511104 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4398046511104 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4398046511104 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4398046511104 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 4398046511104 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4398046511104 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4398046511104 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4398046511104 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4398046511104 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 4398046511104 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=1
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000000001'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=60
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 1 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 1 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 1 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 1 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=36028797018963968
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0080000000000000'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=45
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 36028797018963968 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 36028797018963968 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 36028797018963968 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 36028797018963968 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 36028797018963968 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 36028797018963968 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 36028797018963968 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 36028797018963968 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 36028797018963968 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 36028797018963968 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 36028797018963968 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 36028797018963968 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 36028797018963968 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 36028797018963968 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 36028797018963968 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 36028797018963968 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 36028797018963968 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 36028797018963968 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 36028797018963968 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 36028797018963968 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-2147483649
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ffffffff7fffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=47
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2147483649 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2147483649 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2147483649 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2147483649 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -2147483649 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2147483649 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2147483649 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2147483649 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2147483649 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -2147483649 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2147483649 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2147483649 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2147483649 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2147483649 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -2147483649 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2147483649 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2147483649 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2147483649 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2147483649 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -2147483649 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=-36028797018963969
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='ff7fffffffffffff'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=2
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -36028797018963969 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -36028797018963969 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -36028797018963969 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -36028797018963969 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -36028797018963969 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -36028797018963969 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -36028797018963969 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -36028797018963969 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -36028797018963969 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -36028797018963969 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -36028797018963969 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -36028797018963969 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -36028797018963969 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -36028797018963969 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -36028797018963969 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -36028797018963969 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -36028797018963969 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -36028797018963969 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -36028797018963969 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -36028797018963969 ORDER BY x
+  
+
+
+    SELECT * FROM t1 WHERE rowid=3
+  
+
+
+    SELECT rowid, a FROM t1 WHERE x='0000000000000003'
+  
+
+
+    SELECT rowid, x FROM t1 WHERE a=5
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 3 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 3 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 3 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 3 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 3 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 3 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 3 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 3 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 3 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 3 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 3 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 3 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 3 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 3 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 3 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 3 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 3 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 3 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 3 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 3 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 9.22337303685477580800e+18 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 9.22337303685477580800e+18 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 9.22337303685477580800e+18 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 9.22337303685477580800e+18 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > 9.22337303685477580800e+18 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 9.22337303685477580800e+18 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 9.22337303685477580800e+18 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 9.22337303685477580800e+18 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 9.22337303685477580800e+18 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= 9.22337303685477580800e+18 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 9.22337303685477580800e+18 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 9.22337303685477580800e+18 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 9.22337303685477580800e+18 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 9.22337303685477580800e+18 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < 9.22337303685477580800e+18 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 9.22337303685477580800e+18 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 9.22337303685477580800e+18 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 9.22337303685477580800e+18 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 9.22337303685477580800e+18 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= 9.22337303685477580800e+18 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -9.22337303685477580800e+18 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -9.22337303685477580800e+18 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -9.22337303685477580800e+18 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -9.22337303685477580800e+18 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid > -9.22337303685477580800e+18 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -9.22337303685477580800e+18 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -9.22337303685477580800e+18 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -9.22337303685477580800e+18 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -9.22337303685477580800e+18 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid >= -9.22337303685477580800e+18 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -9.22337303685477580800e+18 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -9.22337303685477580800e+18 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -9.22337303685477580800e+18 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -9.22337303685477580800e+18 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid < -9.22337303685477580800e+18 ORDER BY x
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -9.22337303685477580800e+18 ORDER BY a
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -9.22337303685477580800e+18 ORDER BY a DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -9.22337303685477580800e+18 ORDER BY rowid
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -9.22337303685477580800e+18 ORDER BY rowid DESC
+  
+
+
+    SELECT a FROM t1 WHERE rowid <= -9.22337303685477580800e+18 ORDER BY x
+  

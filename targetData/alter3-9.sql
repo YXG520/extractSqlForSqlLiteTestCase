@@ -1,0 +1,53 @@
+
+
+  CREATE TABLE t1(a,b);
+  INSERT INTO t1 VALUES(1, 2), ('null!',NULL), (3,4);
+
+
+
+  ALTER TABLE t1 ADD COLUMN c CHECK(a!=1);
+
+
+
+  ALTER TABLE t1 ADD COLUMN c CHECK(a!=3);
+
+
+
+  ALTER TABLE t1 ADD COLUMN c CHECK(a!=2);
+
+
+
+  ALTER TABLE t1 ADD COLUMN d AS (b+1) NOT NULL;
+
+
+
+  ALTER TABLE t1 ADD COLUMN d AS (b+1) NOT NULL CHECK(a!=1);
+
+
+
+  ALTER TABLE t1 ADD COLUMN d AS (b+1) NOT NULL CHECK(a!=3);
+
+
+
+  CREATE TEMP TABLE t0(m,n);
+  INSERT INTO t0 VALUES(1, 2), ('null!',NULL), (3,4);
+  ATTACH ':memory:' AS aux1;
+  CREATE TABLE aux1.t2(x,y);
+  INSERT INTO t2 VALUES(1, 2), ('null!',NULL), (3,4);
+
+
+
+  ALTER TABLE t0 ADD COLUMN xtra1 AS (n+1) NOT NULL CHECK(m!=1);
+
+
+
+  ALTER TABLE t0 ADD COLUMN xtra1 AS (n+1) NOT NULL CHECK(m!=3);
+
+
+
+  ALTER TABLE t2 ADD COLUMN xtra1 AS (y+1) NOT NULL CHECK(x!=1);
+
+
+
+  ALTER TABLE t2 ADD COLUMN xtra1 AS (y+1) NOT NULL CHECK(x!=3);
+

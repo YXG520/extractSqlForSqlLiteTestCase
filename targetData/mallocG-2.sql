@@ -1,0 +1,8 @@
+
+
+  CREATE TABLE t1(x, y);
+  CREATE TABLE t2(x INTEGER PRIMARY KEY);
+
+
+  SELECT y FROM t1 WHERE x IN t2;
+

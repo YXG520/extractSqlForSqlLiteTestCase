@@ -1,0 +1,27 @@
+
+
+  CREATE VIRTUAL TABLE t2 USING fts4(x, y, notindexed=x);
+
+
+ 
+    INSERT INTO t2 VALUES(1, 'x y z');
+    INSERT INTO t2 VALUES(2, $v1);
+    INSERT INTO t2 VALUES(3, $v2);
+    INSERT INTO t2 VALUES(4, $v2);
+    INSERT INTO t2 VALUES(5, $v2);
+    INSERT INTO t2 VALUES(6, $v2);
+  
+
+ SELECT x FROM t2 WHERE t2 MATCH '2' 
+
+
+ SELECT x FROM t2 WHERE t2 MATCH '1' 
+2 3 4 5 6
+
+ SELECT x FROM t2 WHERE t2 MATCH 'x' 
+1 2
+
+ SELECT x FROM t2 WHERE t2 MATCH 'x 1' 
+2
+
+ DROP TABLE t2 

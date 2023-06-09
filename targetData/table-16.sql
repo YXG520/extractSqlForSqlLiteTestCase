@@ -1,0 +1,42 @@
+
+
+  CREATE TABLE t16(x DEFAULT(max(1)));
+  INSERT INTO t16(x) VALUES(123);
+  SELECT rowid, x FROM t16;
+
+
+
+  INSERT INTO t16(rowid) VALUES(4);
+
+
+
+  DROP TABLE t16;
+  CREATE TABLE t16(x DEFAULT(abs(1)));
+  INSERT INTO t16(rowid) VALUES(4);
+  SELECT rowid, x FROM t16;
+
+
+
+  DROP TABLE t16;
+  CREATE TABLE t16(x DEFAULT(avg(1)));
+  INSERT INTO t16(rowid) VALUES(123);
+  SELECT rowid, x FROM t16;
+
+
+
+  DROP TABLE t16;
+  CREATE TABLE t16(x DEFAULT(count()));
+  INSERT INTO t16(rowid) VALUES(123);
+  SELECT rowid, x FROM t16;
+
+
+
+  DROP TABLE t16;
+  CREATE TABLE t16(x DEFAULT(group_concat('x',',')));
+  INSERT INTO t16(rowid) VALUES(123);
+  SELECT rowid, x FROM t16;
+
+
+
+  INSERT INTO t16 DEFAULT VALUES;
+

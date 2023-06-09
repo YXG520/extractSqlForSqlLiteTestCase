@@ -1,0 +1,22 @@
+
+
+  CREATE TABLE t7(a, b, c);
+  WITH s(i) AS (
+    SELECT 1 UNION ALL SELECT i+1 FROM s WHERE (i+1)<200
+  )
+  INSERT INTO t7 SELECT i/100, i/50, i FROM s;
+
+
+
+  SELECT DISTINCT a, b FROM t7;
+
+
+
+  SELECT DISTINCT a, b+1 FROM t7;
+
+
+
+  CREATE INDEX i7 ON t7(a, b+1);
+  ANALYZE;
+  SELECT DISTINCT a, b+1 FROM t7;
+

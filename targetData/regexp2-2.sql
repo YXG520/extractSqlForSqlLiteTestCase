@@ -1,0 +1,41 @@
+
+
+  CREATE TABLE t2(a, b);
+  CREATE TABLE t3(c, d);
+  CREATE TABLE t4(e, f);
+
+  CREATE TRIGGER t2_tr1 AFTER UPDATE ON t2 BEGIN
+    UPDATE t3 SET d = new.b WHERE c = old.a;
+  END;
+
+  CREATE TRIGGER t3_tr1 AFTER UPDATE ON t3 BEGIN
+    UPDATE t4 SET f = new.d WHERE e = old.c AND new.d REGEXP 'a.*';
+  END;
+
+  CREATE TRIGGER t4_tr1 AFTER UPDATE ON t4 BEGIN
+    SELECT CASE WHEN new.f REGEXP '.*y.*' THEN error() ELSE 1 END;
+  END;
+
+  INSERT INTO t2 VALUES(1, 'a_x_1');
+  INSERT INTO t2 VALUES(2, 'a_y_1');
+
+  INSERT INTO t3 VALUES(1, 'b1');
+  INSERT INTO t3 VALUES(2, 'b2');
+
+  INSERT INTO t4 VALUES(1, 'b1');
+  INSERT INTO t4 VALUES(2, 'b2');
+
+
+
+  UPDATE t2 SET a=a+1 WHERE b REGEXP 'a.*' AND b REGEXP '.*1';
+
+
+
+  UPDATE t2 SET b = 'a_abc_1';
+
+
+
+  SELECT * FROM t2;
+  SELECT * FROM t3;
+  SELECT * FROM t4;
+

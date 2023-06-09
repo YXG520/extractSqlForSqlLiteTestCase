@@ -1,0 +1,6 @@
+
+PRAGMA auto_vacuum
+
+BEGIN EXCLUSIVE
+PRAGMA auto_vacuum
+COMMIT

@@ -1,0 +1,24 @@
+
+
+    CREATE TABLE y1(a, b);
+    CREATE INDEX y1a ON y1(a);
+
+    WITH cnt(i) AS ( SELECT 1 UNION ALL SELECT i+1 FROM cnt LIMIT 1000)
+      INSERT INTO y1 SELECT i%10, i FROM cnt;
+    ANALYZE;
+
+  
+
+W
+Q
+
+W
+Q
+
+
+  CREATE TABLE w1(pk INTEGER PRIMARY KEY, x INTEGER);
+  CREATE TABLE w2(pk INTEGER PRIMARY KEY);
+
+
+W
+Q

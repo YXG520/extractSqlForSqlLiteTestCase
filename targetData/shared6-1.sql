@@ -1,0 +1,64 @@
+
+
+    CREATE TABLE t1(a, b);
+    CREATE TABLE t2(c, d);
+    CREATE TABLE t3(e, f);
+  
+
+
+
+ SELECT * FROM t1 
+ BEGIN EXCLUSIVE 
+ SELECT * FROM t1 
+
+ SELECT * FROM t1 
+
+
+    COMMIT;
+    BEGIN;
+    INSERT INTO t2 VALUES(3, 4);
+  
+ SELECT * FROM t1 
+
+ COMMIT 
+
+
+    BEGIN;
+    INSERT INTO t1 VALUES(1, 2);
+  
+ SELECT * FROM t1 
+
+ SELECT * FROM t2 
+
+ SELECT * FROM t1 
+
+ INSERT INTO t2 VALUES(1, 2) 
+
+
+    COMMIT;
+    BEGIN;
+    SELECT * FROM t1;
+  
+ SELECT * FROM t1 
+
+ INSERT INTO t1 VALUES(5, 6) 
+
+ COMMIT 
+
+ PRAGMA read_uncommitted = 1 
+
+    BEGIN;
+    INSERT INTO t1 VALUES(5, 6);
+  
+ SELECT * FROM t1 
+
+ CREATE TABLE t4(a, b) 
+ SELECT * FROM t1 
+
+
+    COMMIT;
+    BEGIN;
+    SELECT * FROM t1;
+  
+ INSERT INTO t1 VALUES(7, 8) 
+

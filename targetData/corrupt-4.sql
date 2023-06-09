@@ -1,0 +1,9 @@
+
+
+    PRAGMA page_size = 1024;
+    CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT);
+  
+ INSERT INTO t1 VALUES($i, $text) 
+ CREATE INDEX i1 ON t1(b) 
+
+ DELETE FROM t1 WHERE rowid = 3 

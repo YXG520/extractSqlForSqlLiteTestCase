@@ -1,0 +1,8 @@
+
+
+SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3
+ db close 
+
+
+      SELECT closedb(),func1() UNION ALL SELECT 20,30 UNION ALL SELECT 30,40
+    

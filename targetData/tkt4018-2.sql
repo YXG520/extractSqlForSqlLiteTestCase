@@ -1,0 +1,9 @@
+
+INSERT INTO t1 VALUES(1, 2)
+
+
+    BEGIN;
+    SELECT * FROM t1 ORDER BY a;
+  
+
+INSERT INTO t1 VALUES(5, 6)

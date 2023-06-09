@@ -1,0 +1,13 @@
+
+
+  PRAGMA foreign_keys = 1;
+  CREATE TABLE x(a, b, PRIMARY KEY(a, b));
+  CREATE TABLE y(c, d,
+    FOREIGN KEY(d, c) REFERENCES x DEFERRABLE INITIALLY DEFERRED
+  );
+  CREATE TABLE z(e, f, FOREIGN KEY(e, f) REFERENCES x);
+
+
+  DROP TABLE y;
+  DROP TABLE x;
+

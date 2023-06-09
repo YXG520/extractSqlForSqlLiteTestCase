@@ -1,0 +1,10 @@
+
+INSERT INTO t1 VALUES(30,NULL)
+SELECT * FROM t1 WHERE b IS NULL
+
+SELECT concat('a', b, 'z') FROM t1 WHERE b is NULL
+
+
+SELECT * FROM t1 WHERE b IS NULL
+
+SELECT concat('a', b, 'z') FROM t1 WHERE b is NULL

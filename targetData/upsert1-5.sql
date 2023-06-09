@@ -1,0 +1,8 @@
+
+
+  DROP TABLE t1;
+  CREATE TABLE t1(x INTEGER PRIMARY KEY, y INT UNIQUE);
+  INSERT INTO t1(x,y) SELECT 1,2 WHERE true
+    ON CONFLICT(x) DO UPDATE SET y=max(t1.y,excluded.y) AND true;
+  SELECT * FROM t1;
+

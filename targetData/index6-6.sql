@@ -1,0 +1,17 @@
+
+
+  CREATE TABLE t6(a,b);
+  CREATE UNIQUE INDEX t6ab ON t1(a,b);
+  CREATE INDEX t6b ON t6(b) WHERE b=1;
+  INSERT INTO t6(a,b) VALUES(123,456);
+  SELECT * FROM t6;
+
+
+
+  UPDATE OR REPLACE t6 SET b=789;
+  SELECT * FROM t6;
+
+
+
+  PRAGMA integrity_check;
+

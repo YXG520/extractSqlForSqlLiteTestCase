@@ -1,0 +1,8 @@
+
+
+  CREATE TABLE t3(a, b, c);
+  CREATE INDEX i3 ON t3(a, b);
+
+
+INSERT INTO t3 VALUES($c % 2, $v, $c)
+EXPLAIN QUERY PLAN SELECT * FROM t3 WHERE $q

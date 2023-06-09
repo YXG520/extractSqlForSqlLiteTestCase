@@ -1,0 +1,8 @@
+
+
+  DELETE FROM t1 WHERE rowid>16;
+  DROP TABLE IF EXISTS x1;
+  CREATE VIRTUAL TABLE x1 USING fts4;
+
+
+ SELECT max(level) FROM x1_segdir 

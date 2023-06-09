@@ -1,0 +1,4 @@
+
+
+  VALUES(2) EXCEPT SELECT '' ORDER BY abc
+

@@ -1,0 +1,11 @@
+
+
+  CREATE TABLE xyz(x INTEGER PRIMARY KEY, y, z);
+  CREATE TRIGGER xyz_tr BEFORE INSERT ON xyz BEGIN
+    SELECT new.x;
+  END;
+
+
+
+  INSERT INTO xyz VALUES('hello', 2, 3);
+

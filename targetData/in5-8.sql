@@ -1,0 +1,22 @@
+
+
+  CREATE TABLE n1(a INTEGER PRIMARY KEY, b VARCHAR(500));
+  CREATE UNIQUE INDEX n1a ON n1(a);
+
+
+
+  SELECT count(*) FROM n1 WHERE a IN (1, 2, 3)
+
+
+
+  SELECT count(*) FROM n1 WHERE a IN (SELECT +a FROM n1)
+
+
+
+  INSERT INTO n1 VALUES(1, NULL), (2, NULL), (3, NULL);
+  SELECT count(*) FROM n1 WHERE a IN (1, 2, 3)
+
+
+
+  SELECT count(*) FROM n1 WHERE a IN (SELECT +a FROM n1)
+

@@ -1,0 +1,135 @@
+
+
+    DROP TABLE IF EXISTS t1;
+    DROP TABLE IF EXISTS t2;
+    CREATE TABLE t1(x, id);
+    CREATE TABLE t2(x, id);
+    INSERT INTO t1 VALUES(NULL, NULL);
+    INSERT INTO t1 VALUES(0, NULL);
+    INSERT INTO t1 VALUES(1, 3);
+    INSERT INTO t1 VALUES(2, 4);
+    INSERT INTO t1 VALUES(3, 5);
+    INSERT INTO t1 VALUES(4, 6);
+    INSERT INTO t2 VALUES(0, NULL);
+    INSERT INTO t2 VALUES(4, 1);
+    INSERT INTO t2 VALUES(NULL, 1);
+    INSERT INTO t2 VALUES(NULL, NULL);
+  
+
+
+    SELECT x FROM t1 WHERE id IN () AND x IN (SELECT x FROM t2 WHERE id=1)
+  
+
+
+    CREATE TABLE t3(x, y, z);
+    CREATE INDEX t3i1 ON t3(x, y);
+    INSERT INTO t3 VALUES(1, 1, 1);
+    INSERT INTO t3 VALUES(10, 10, 10);
+  
+ SELECT * FROM t3 WHERE x IN () 
+
+ SELECT * FROM t3 WHERE x = 10 AND y IN () 
+
+ SELECT * FROM t3 WHERE x IN () AND y = 10 
+
+ SELECT * FROM t3 WHERE x IN () OR x = 10 
+
+ SELECT * FROM t3 WHERE y IN () 
+
+ SELECT x IN() AS a FROM t3 WHERE a 
+
+ SELECT x IN() AS a FROM t3 WHERE NOT a 
+
+ SELECT * FROM t3 WHERE oid IN () 
+
+ SELECT * FROM t3 WHERE x IN (1, 2) OR y IN ()
+
+ SELECT * FROM t3 WHERE x IN (1, 2) AND y IN ()
+
+
+  SELECT * FROM t3 WHERE x=10 AND y IN (10);
+
+
+
+  SELECT * FROM t3 WHERE x IN (10) AND y=10;
+
+
+
+  SELECT * FROM t3 WHERE x IN (10) AND y IN (10);
+
+
+
+  SELECT * FROM t3 WHERE x=1 AND y NOT IN (10);
+
+
+
+  SELECT * FROM t3 WHERE x  NOT IN (10) AND y=1;
+
+
+
+  SELECT * FROM t3 WHERE x NOT IN (10) AND y NOT IN (10);
+
+
+
+  DROP INDEX t3i1;
+  CREATE UNIQUE INDEX t3xy ON t3(x,y);
+
+  SELECT *, '|' FROM t3 A, t3 B
+   WHERE A.x=10 AND A.y IN (10)
+     AND B.x=1 AND B.y IN (1);
+
+
+
+  EXPLAIN QUERY PLAN
+  SELECT *, '|' FROM t3 A, t3 B
+   WHERE A.x=10 AND A.y IN (10)
+     AND B.x=1 AND B.y IN (1);
+
+
+
+  SELECT *, '|' FROM t3 A, t3 B
+   WHERE A.x IN (10) AND A.y=10
+     AND B.x IN (1) AND B.y=1;
+
+
+
+  EXPLAIN QUERY PLAN
+  SELECT *, '|' FROM t3 A, t3 B
+   WHERE A.x IN (10) AND A.y=10
+     AND B.x IN (1) AND B.y=1;
+
+
+
+  SELECT * FROM t3 WHERE x IN (10,11);
+
+
+
+  EXPLAIN
+  SELECT * FROM t3 WHERE x IN (10,11);
+
+
+
+  SELECT * FROM t3 WHERE x IN (10);
+
+
+#  EXPLAIN
+#  SELECT * FROM t3 WHERE x IN (10);
+#
+
+
+  SELECT * FROM t3 WHERE x NOT IN (10,11,99999);
+
+
+
+  EXPLAIN
+  SELECT * FROM t3 WHERE x NOT IN (10,11,99999);
+
+
+
+  SELECT * FROM t3 WHERE x NOT IN (10);
+
+
+
+  EXPLAIN
+  SELECT * FROM t3 WHERE x NOT IN (10);
+

@@ -1,0 +1,21 @@
+
+
+    DELETE FROM t1;
+    CREATE TEMP TABLE tt1(a, b);
+    CREATE TEMP TRIGGER tr1 AFTER INSERT ON t1 BEGIN
+      INSERT INTO tt1 VALUES(new.a, new.b);
+    END;
+  
+
+
+    INSERT INTO t1 VALUES(10, 20);
+    SELECT * FROM tt1;
+  
+
+
+
+    INSERT INTO t1 VALUES(30, 40);
+    SELECT * FROM tt1;
+  
+
+ DROP TRIGGER tr1 

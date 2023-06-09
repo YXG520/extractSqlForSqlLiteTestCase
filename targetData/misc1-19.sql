@@ -1,0 +1,18 @@
+
+
+  CREATE TABLE t19 AS SELECT 1, 2 AS '', 3;
+  SELECT * FROM t19;
+
+
+
+  CREATE TABLE t19b AS SELECT 4 AS '', 5 AS '',  6 AS '';
+  SELECT * FROM t19b;
+
+
+
+  CREATE TABLE t19c(x TEXT);
+  CREATE TABLE t19d AS SELECT * FROM t19c UNION ALL SELECT 1234;
+  SELECT x, typeof(x) FROM t19d;
+
+
+

@@ -1,0 +1,45 @@
+
+
+    SELECT a.x, b.x FROM t1 AS a, (SELECT x FROM t1 LIMIT 2) AS b
+     ORDER BY 1, 2
+  
+
+
+    SELECT x FROM (SELECT x FROM t1 LIMIT 2);
+  
+
+
+    SELECT x FROM (SELECT x FROM t1 LIMIT 2 OFFSET 1);
+  
+
+
+    SELECT x FROM (SELECT x FROM t1) LIMIT 2;
+  
+
+
+    SELECT x FROM (SELECT x FROM t1) LIMIT 2 OFFSET 1;
+  
+
+
+    SELECT x FROM (SELECT x FROM t1 LIMIT 2) LIMIT 3;
+  
+
+
+    SELECT x FROM (SELECT x FROM t1 LIMIT -1) LIMIT 3;
+  
+
+
+    SELECT x FROM (SELECT x FROM t1 LIMIT -1);
+  
+
+
+    SELECT x FROM (SELECT x FROM t1 LIMIT -1 OFFSET 1);
+  
+
+
+    SELECT x, y FROM (SELECT x, (SELECT 10+x) y FROM t1 LIMIT -1 OFFSET 1);
+  
+
+
+    SELECT x, y FROM (SELECT x, (SELECT 10)+x y FROM t1 LIMIT -1 OFFSET 1);
+  

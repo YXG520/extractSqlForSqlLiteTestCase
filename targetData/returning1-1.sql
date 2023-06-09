@@ -1,0 +1,38 @@
+
+
+  CREATE TABLE t1(a INTEGER PRIMARY KEY,b,c DEFAULT 'pax');
+  INSERT INTO t1(b) VALUES(10),('happy'),(NULL) RETURNING a,b,c;
+
+
+
+  SELECT * FROM t1;
+
+
+
+  INSERT INTO t1(b,c) VALUES(5,99) RETURNING b,c,a,rowid;
+
+
+
+  SELECT * FROM t1;
+
+
+
+  INSERT INTO t1 DEFAULT VALUES RETURNING *;
+
+
+
+  SELECT * FROM t1;
+
+
+
+  CREATE TABLE t2(x,y,z);
+  INSERT INTO t2 VALUES(11,12,13),(21,'b','c'),(31,'b-value',4.75);
+
+
+
+  INSERT INTO t1 SELECT * FROM t2 RETURNING *;
+
+
+
+  SELECT *, '|' FROM t1;
+

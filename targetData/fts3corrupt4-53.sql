@@ -1,0 +1,6 @@
+
+
+
+
+  SELECT*FROM t1 WHERE t1 MATCH'ATE"0"OR"2D:P"""ATE"0"OR"2:P"""';
+

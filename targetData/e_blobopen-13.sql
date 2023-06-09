@@ -1,0 +1,14 @@
+
+
+  CREATE TABLE c2(i INTEGER PRIMARY KEY, j);
+  INSERT INTO c2 VALUES(10, zeroblob(24));
+
+
+INSERT INTO c2 VALUES(11, ?)
+
+
+
+
+
+
+ SELECT j FROM c2 

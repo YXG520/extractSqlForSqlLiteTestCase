@@ -1,0 +1,27 @@
+
+
+  CREATE TABLE t1 (x INTEGER);
+  INSERT INTO t1 VALUES(1);   -- Some true value
+  CREATE TABLE t2 (z TEXT);
+  INSERT INTO t2 VALUES('some value');
+  CREATE TABLE t3(w TEXT);
+  INSERT INTO t3 VALUES('some other value');
+
+
+
+  SELECT (
+    SELECT 1 FROM t2 LEFT JOIN (SELECT x AS v FROM t3) ON 500=v WHERE (v OR FALSE)
+  ) FROM t1;
+
+
+
+  SELECT (
+    SELECT 1 FROM t2 LEFT JOIN (SELECT x AS v FROM t3) ON 500=v WHERE (v)
+  ) FROM t1;
+
+
+
+  SELECT (
+    SELECT 1 FROM t2 LEFT JOIN (SELECT x AS v FROM t3) ON 500=v WHERE (v OR FALSE)
+  ) FROM t1;
+

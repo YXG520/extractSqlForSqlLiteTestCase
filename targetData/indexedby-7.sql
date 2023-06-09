@@ -1,0 +1,12 @@
+
+D
+
+D
+
+D
+
+D
+
+D
+
+ DELETE FROM t1 INDEXED BY i2 WHERE a = 5

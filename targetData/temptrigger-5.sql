@@ -1,0 +1,12 @@
+
+
+  CREATE TABLE t1(x);
+  CREATE TEMP TRIGGER tr1 BEFORE INSERT ON t1 BEGIN SELECT 1,2,3; END;
+
+
+ DROP TABLE t1 
+
+
+  SELECT * FROM sqlite_master;
+  SELECT * FROM temp.sqlite_master;
+

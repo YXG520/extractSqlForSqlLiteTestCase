@@ -1,0 +1,12 @@
+
+
+      CREATE TRIGGER trig2 BEFORE DELETE ON t1 BEGIN
+      SELECT set_val(
+          old.b||' '||typeof(old.b)||' '||old.c||' '||typeof(old.c)
+      );
+      END;
+    
+
+
+      DELETE FROM t1 WHERE a = 2;
+    

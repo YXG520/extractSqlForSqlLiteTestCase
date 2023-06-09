@@ -1,0 +1,11 @@
+
+
+      CREATE TABLE t21a(a,b);
+      INSERT INTO t21a VALUES(1,2);
+      CREATE TABLE t21b(n);
+      CREATE TRIGGER r21 AFTER INSERT ON t21b BEGIN
+        SELECT a FROM t21a WHERE a>new.x UNION ALL
+        SELECT b FROM t21a WHERE b>new.x ORDER BY 1 LIMIT 2;
+      END;
+      INSERT INTO t21b VALUES(6);
+    

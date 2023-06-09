@@ -1,0 +1,14 @@
+
+
+  CREATE TABLE r3(x);
+  CREATE TABLE r4(y INTEGER PRIMARY KEY);
+  INSERT INTO r4 VALUES(55);
+
+
+
+  SELECT 'value!' FROM r3 FULL JOIN r4 ON (y=x);
+
+
+
+  SELECT 'value!' FROM r3 FULL JOIN r4 ON (y=x) WHERE +y=55;
+

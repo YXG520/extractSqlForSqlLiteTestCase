@@ -1,0 +1,6 @@
+
+
+  CREATE TABLE t0(x INTEGER DEFAULT(0==0) NOT NULL);
+  REPLACE INTO t0(x) VALUES('');
+  SELECT rowid, quote(x) FROM t0;
+

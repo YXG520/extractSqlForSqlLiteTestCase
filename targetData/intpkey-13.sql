@@ -1,0 +1,21 @@
+
+
+    SELECT * FROM t1 WHERE a=1;
+  
+
+
+    INSERT INTO t1 VALUES('1.0',2,3);
+    SELECT * FROM t1 WHERE a=1;
+  
+
+
+    INSERT INTO t1 VALUES('1.5',3,4);
+  
+
+
+      INSERT INTO t1 VALUES(x'123456',3,4);
+    
+
+
+    INSERT INTO t1 VALUES('+1234567890',3,4);
+  

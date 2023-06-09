@@ -1,0 +1,11 @@
+
+CREATE TABLE t3(x);
+
+    INSERT INTO t3 VALUES(1);
+  
+
+
+
+
+    INSERT INTO t3 VALUES(1);
+  

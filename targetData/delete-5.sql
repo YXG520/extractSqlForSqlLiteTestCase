@@ -1,0 +1,42 @@
+
+DELETE FROM table1
+
+SELECT count(*) FROM table1
+
+BEGIN TRANSACTION
+INSERT INTO table1 VALUES($i,[expr {$i*$i}])
+COMMIT
+SELECT count(*) FROM table1
+
+DELETE FROM table1
+
+BEGIN TRANSACTION
+INSERT INTO table1 VALUES($i,[expr {$i*$i}])
+COMMIT
+SELECT count(*) FROM table1
+
+PRAGMA count_changes=off
+DELETE FROM table1
+
+SELECT count(*) FROM table1
+
+BEGIN TRANSACTION
+INSERT INTO table1 VALUES($i,[expr {$i*$i}])
+COMMIT
+SELECT count(*) FROM table1
+
+DELETE FROM table1 WHERE f1==$i
+SELECT count(*) FROM table1
+
+DELETE FROM table1 WHERE f1>50
+
+SELECT count(*) FROM table1
+
+DELETE FROM table1 WHERE f1==$i
+SELECT f1 FROM table1 ORDER BY f1
+
+DELETE FROM table1 WHERE f1==$i
+SELECT f1 FROM table1 ORDER BY f1
+
+DELETE FROM table1 WHERE f1!=48
+SELECT f1 FROM table1 ORDER BY f1

@@ -1,0 +1,12 @@
+
+
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(x);
+  INSERT INTO t1(x) VALUES(0),(1);
+  SELECT * FROM t1 LEFT JOIN (SELECT abs(1) AS y FROM t1) ON x WHERE NOT(y='a');
+
+
+
+  SELECT * FROM t1 LEFT JOIN (SELECT abs(1)+2 AS y FROM t1) ON x
+   WHERE NOT(y='a');
+

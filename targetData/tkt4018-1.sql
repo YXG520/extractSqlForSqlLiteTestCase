@@ -1,0 +1,11 @@
+
+
+    CREATE TABLE t1(a, b);
+    BEGIN;
+    SELECT * FROM t1;
+  
+
+
+INSERT INTO t1 VALUES(3, 4)
+
+INSERT INTO t1 VALUES(3, 4)

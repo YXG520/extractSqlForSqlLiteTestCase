@@ -1,0 +1,10 @@
+
+
+  CREATE VIRTUAL TABLE t1 USING rtree(a, b, c);
+  CREATE TABLE t2(x);
+
+
+
+  INSERT INTO t1(a,b,c) VALUES(1,2,3) 
+  RETURNING (SELECT b FROM t2);
+

@@ -1,0 +1,78 @@
+
+
+  CREATE TABLE t5a(x INT UNIQUE COLLATE nocase);
+  INSERT INTO t5a(x) VALUES('/abc'),(123),(-234);
+  SELECT x FROM t5a WHERE x LIKE '/%';
+
+
+S
+Q
+
+
+  SELECT x FROM t5a WHERE x LIKE '/a%';
+
+
+S
+Q
+
+
+  SELECT x FROM t5a WHERE x LIKE '^12%' ESCAPE '^';
+
+
+S
+Q
+
+
+  SELECT x FROM t5a WHERE x LIKE '^-2%' ESCAPE '^';
+
+
+S
+Q
+
+
+  CREATE TABLE t5b(x INT UNIQUE COLLATE binary);
+  INSERT INTO t5b(x) VALUES('/abc'),(123),(-234);
+  SELECT x FROM t5b WHERE x GLOB '/*';
+
+
+S
+Q
+
+
+  SELECT x FROM t5b WHERE x GLOB '/a*';
+
+
+S
+Q
+
+
+  CREATE TABLE t5c (c0 REAL);
+  CREATE INDEX t5c_0 ON t5c(c0 COLLATE NOCASE);
+  INSERT INTO t5c(rowid, c0) VALUES (99,'+/');
+  SELECT * FROM t5c WHERE (c0 LIKE '+/');
+
+
+
+  DROP TABLE IF EXISTS t0;
+  CREATE TABLE t0(c0 INT UNIQUE COLLATE NOCASE);
+  INSERT INTO t0(c0) VALUES ('./');
+  SELECT * FROM t0 WHERE t0.c0 LIKE './';
+
+
+
+  DROP TABLE IF EXISTS t0;
+  CREATE TABLE t0(c0 INT UNIQUE COLLATE NOCASE);
+  INSERT INTO t0(c0) VALUES ('.1%');
+  SELECT * FROM t0 WHERE t0.c0 LIKE '.1%';
+
+
+
+  DROP TABLE IF EXISTS t0;
+  CREATE TABLE t0(c0 UNIQUE);
+  INSERT INTO t0(c0) VALUES(-1);
+  SELECT * FROM t0 WHERE t0.c0 GLOB '-*';
+
+
+
+  SELECT t0.c0 GLOB '-*' FROM t0;
+

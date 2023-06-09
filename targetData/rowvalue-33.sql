@@ -1,0 +1,34 @@
+
+
+  CREATE TABLE t1(a INT, b INT PRIMARY KEY) WITHOUT ROWID;
+  INSERT INTO t1(a, b) VALUES (0, 1),(15,-7),(3,100);
+  ANALYZE;
+
+
+
+  SELECT * FROM t1 WHERE (b,a) BETWEEN (0,5) AND (99,-2);
+
+
+
+  SELECT * FROM t1 WHERE (b,a) BETWEEN (-8,5) AND (0,-2);
+
+
+
+  SELECT * FROM t1 WHERE (b,a) BETWEEN (3,5) AND (100,4);
+
+
+
+  SELECT * FROM t1 WHERE (b,a) BETWEEN (3,5) AND (100,2);
+
+
+
+  SELECT * FROM t1 WHERE (a,b) BETWEEN (-2,99) AND (1,0);
+
+
+
+  SELECT * FROM t1 WHERE (a,b) BETWEEN (14,99) AND (16,0);
+
+
+
+  SELECT * FROM t1 WHERE (a,b) BETWEEN (2,99) AND (4,0);
+

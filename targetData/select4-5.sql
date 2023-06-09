@@ -1,0 +1,106 @@
+
+
+    SELECT DISTINCT log FROM t2
+    UNION ALL
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY log;
+  
+
+
+    SELECT DISTINCT log AS "xyzzy" FROM t1
+    UNION ALL
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY xyzzy;
+  
+
+
+    SELECT DISTINCT log AS xyzzy FROM t1
+    UNION ALL
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY "xyzzy";
+  
+
+
+    SELECT DISTINCT log FROM t1
+    UNION ALL
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY "xyzzy";
+  
+
+
+    SELECT DISTINCT log FROM t1
+    INTERSECT
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY "xyzzy";
+  
+
+
+    SELECT DISTINCT log FROM t1
+    UNION ALL
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY n;
+  
+
+
+    SELECT DISTINCT log FROM t1
+    UNION ALL
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY log;
+  
+
+
+    SELECT DISTINCT log FROM t1
+    UNION ALL
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY 1;
+  
+
+
+    SELECT DISTINCT log FROM t1
+    UNION ALL
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY 2;
+  
+
+
+    SELECT DISTINCT 1, log FROM t1
+    UNION ALL
+    SELECT 2, n FROM t1 WHERE log=3
+    ORDER BY 2, 1;
+  
+
+
+    SELECT DISTINCT 1, log FROM t1
+    UNION ALL
+    SELECT 2, n FROM t1 WHERE log=3
+    ORDER BY 1, 2 DESC;
+  
+
+
+    SELECT DISTINCT 1, log FROM t1
+    UNION ALL
+    SELECT 2, n FROM t1 WHERE log=3
+    ORDER BY n, 1;
+  
+
+
+    SELECT DISTINCT log, n FROM t1
+    UNION ALL
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY log;
+  
+
+
+    SELECT 1 UNION SELECT 2, 3 UNION SELECT 4, 5 ORDER BY 1;
+  
+
+
+    SELECT log FROM t1 WHERE n=2
+    UNION ALL
+    SELECT log FROM t1 WHERE n=3
+    UNION ALL
+    SELECT log FROM t1 WHERE n=4
+    UNION ALL
+    SELECT log FROM t1 WHERE n=5
+    ORDER BY log;
+  

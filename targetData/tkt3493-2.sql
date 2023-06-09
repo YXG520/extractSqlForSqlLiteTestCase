@@ -1,0 +1,29 @@
+
+
+    CREATE TABLE t1(a TEXT, b INT);
+    INSERT INTO t1 VALUES(123, 456);
+  
+
+ SELECT a=123 FROM t1 GROUP BY a 
+
+ SELECT a=123 FROM t1 
+
+ SELECT a='123' FROM t1 
+
+ SELECT count(*), a=123 FROM t1 
+
+ SELECT count(*), +a=123 FROM t1 
+
+ SELECT b='456' FROM t1 GROUP BY a 
+
+ SELECT b='456' FROM t1 GROUP BY b 
+
+ SELECT b='456' FROM t1 
+
+ SELECT typeof(a), a FROM t1 GROUP BY a HAVING a=123 
+
+ SELECT typeof(a), a FROM t1 GROUP BY b HAVING a=123 
+
+ SELECT typeof(b), b FROM t1 GROUP BY a HAVING b='456' 
+
+ SELECT typeof(b), b FROM t1 GROUP BY b HAVING b='456' 

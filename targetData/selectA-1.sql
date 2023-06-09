@@ -1,0 +1,31 @@
+
+
+    CREATE TABLE t1(a,b,c COLLATE NOCASE);
+    INSERT INTO t1 VALUES(1,'a','a');
+    INSERT INTO t1 VALUES(9.9, 'b', 'B');
+    INSERT INTO t1 VALUES(NULL, 'C', 'c');
+    INSERT INTO t1 VALUES('hello', 'd', 'D');
+    INSERT INTO t1 VALUES(x'616263', 'e', 'e');
+    SELECT * FROM t1;
+  
+
+
+    CREATE TABLE t2(x,y,z COLLATE NOCASE);
+    INSERT INTO t2 VALUES(NULL,'U','u');
+    INSERT INTO t2 VALUES('mad', 'Z', 'z');
+    INSERT INTO t2 VALUES(x'68617265', 'm', 'M');
+    INSERT INTO t2 VALUES(5.2e6, 'X', 'x');
+    INSERT INTO t2 VALUES(-23, 'Y', 'y');
+    SELECT * FROM t2;
+  
+
+
+    CREATE TABLE t3(a,b,c COLLATE NOCASE);
+    INSERT INTO t3 SELECT * FROM t1;
+    INSERT INTO t3 SELECT * FROM t2;
+    INSERT INTO t3 SELECT * FROM t1;
+    INSERT INTO t3 SELECT * FROM t2;
+    INSERT INTO t3 SELECT * FROM t1;
+    INSERT INTO t3 SELECT * FROM t2;
+    SELECT count(*) FROM t3;
+  

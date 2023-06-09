@@ -1,0 +1,28 @@
+
+
+  CREATE TABLE x1(a INTEGER PRIMARY KEY, b);
+  INSERT INTO x1 VALUES
+      (1, 123), (2, '123'), (3, '123abc'), (4, 123.0), (5, 1234);
+
+
+
+  SELECT a, b FROM x1 WHERE CAST(b AS INTEGER) = 123;
+
+
+
+  CREATE INDEX x1i ON x1( CAST(b AS INTEGER) );
+  SELECT a, b FROM x1 WHERE CAST(b AS INTEGER) = 123;
+
+
+S
+
+
+  SELECT a, b FROM x1 WHERE CAST(b AS TEXT) = 123;
+
+
+
+  CREATE INDEX x1i2 ON x1( CAST(b AS TEXT) );
+  SELECT a, b FROM x1 WHERE CAST(b AS TEXT) = 123;
+
+
+S

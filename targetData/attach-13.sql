@@ -1,0 +1,3 @@
+
+CREATE TABLE base(x);
+SELECT a FROM t1 WHERE b IN (SELECT a FROM t2);

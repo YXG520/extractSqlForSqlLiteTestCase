@@ -1,0 +1,8 @@
+
+
+    CREATE TABLE t1(x UNIQUE, y);
+    INSERT INTO t1 VALUES(1,2);
+  
+
+  INSERT INTO t1 SELECT x+1, y+100 FROM t1;
+

@@ -1,0 +1,8 @@
+
+
+  CREATE TABLE t7(a,b);
+  CREATE INDEX t7a ON t7(a);
+  CREATE INDEX t7ab ON t7(a,b);
+  EXPLAIN QUERY PLAN
+  SELECT * FROM t7 WHERE a=?1 ORDER BY rowid;
+

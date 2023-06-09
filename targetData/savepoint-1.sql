@@ -1,0 +1,51 @@
+
+
+    SAVEPOINT sp1;
+    RELEASE sp1;
+  
+
+
+    SAVEPOINT sp1;
+    ROLLBACK TO sp1;
+  
+
+ SAVEPOINT sp1 
+
+
+    SAVEPOINT sp1;
+    SAVEPOINT sp2;
+    RELEASE sp1;
+  
+
+
+    SAVEPOINT sp1;
+    SAVEPOINT sp2;
+    RELEASE sp2;
+  
+
+ RELEASE sp1 
+
+
+    SAVEPOINT sp1;
+    SAVEPOINT sp2;
+    ROLLBACK TO sp1;
+  
+
+ RELEASE SAVEPOINT sp1 
+
+
+    SAVEPOINT sp1;
+    SAVEPOINT sp2;
+    SAVEPOINT sp3;
+    ROLLBACK TO SAVEPOINT sp3;
+    ROLLBACK TRANSACTION TO sp2;
+    ROLLBACK TRANSACTION TO SAVEPOINT sp1;
+  
+
+ RELEASE SAVEPOINT SP1 
+
+
+    SAVEPOINT sp1;
+    ROLLBACK TO sp1;
+  
+

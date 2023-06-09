@@ -1,0 +1,55 @@
+
+
+    CREATE TABLE t1(a INT PRIMARY KEY, b) WITHOUT rowid;
+    CREATE TABLE t2(
+      c INT PRIMARY KEY,
+      d INTEGER DEFAULT 1 REFERENCES t1 ON DELETE SET DEFAULT
+    ) WITHOUT rowid;
+    DELETE FROM t1;
+  
+
+
+    INSERT INTO t1 VALUES(1, 'one');
+    INSERT INTO t1 VALUES(2, 'two');
+    INSERT INTO t2 VALUES(1, 2);
+    SELECT * FROM t2;
+    DELETE FROM t1 WHERE a = 2;
+    SELECT * FROM t2;
+  
+
+
+    INSERT INTO t1 VALUES(2, 'two');
+    UPDATE t2 SET d = 2;
+    DELETE FROM t1 WHERE a = 1;
+    SELECT * FROM t2;
+  
+
+ SELECT * FROM t1 
+
+ DELETE FROM t1 
+
+
+    CREATE TABLE pp(a, b, c, PRIMARY KEY(b, c)) WITHOUT rowid;
+    CREATE TABLE cc(d DEFAULT 3, e DEFAULT 1, f DEFAULT 2,
+        FOREIGN KEY(f, d) REFERENCES pp 
+        ON UPDATE SET DEFAULT 
+        ON DELETE SET NULL
+    );
+    INSERT INTO pp VALUES(1, 2, 3);
+    INSERT INTO pp VALUES(4, 5, 6);
+    INSERT INTO pp VALUES(7, 8, 9);
+  
+
+
+    INSERT INTO cc VALUES(6, 'A', 5);
+    INSERT INTO cc VALUES(6, 'B', 5);
+    INSERT INTO cc VALUES(9, 'A', 8);
+    INSERT INTO cc VALUES(9, 'B', 8);
+    UPDATE pp SET b = 1 WHERE a = 7;
+    SELECT * FROM cc;
+  
+
+
+    DELETE FROM pp WHERE a = 4;
+    SELECT * FROM cc;
+  

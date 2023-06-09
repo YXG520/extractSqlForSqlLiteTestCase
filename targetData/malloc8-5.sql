@@ -1,0 +1,10 @@
+
+
+  PRAGMA encoding='UTF-16';
+  CREATE TABLE t1(a);
+  INSERT INTO t1 
+  VALUES('0123456789aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ');
+
+
+  SELECT 1 FROM t1 WHERE a LIKE 'hello' ESCAPE NULL;
+

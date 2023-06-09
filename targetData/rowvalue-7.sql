@@ -1,0 +1,10 @@
+
+
+  CREATE TABLE xy(i INTEGER PRIMARY KEY, j, k);
+  INSERT INTO xy VALUES(1, 1, 1);
+  INSERT INTO xy VALUES(2, 2, 2);
+  INSERT INTO xy VALUES(3, 3, 3);
+  INSERT INTO xy VALUES(4, 4, 4);
+
+
+  1 "SELECT * FROM xy WHERE (i, j) IS (2, 2)" {2 2 2

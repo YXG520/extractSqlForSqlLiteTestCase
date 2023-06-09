@@ -1,0 +1,47 @@
+
+
+    CREATE TABLE t1(a,b,c);
+    INSERT INTO t1 VALUES(1,2,3);
+    CREATE VIEW v1 AS
+      SELECT a+b AS x, b+c AS y, a+c AS z FROM t1;
+    SELECT * FROM v1;
+  
+
+
+    CREATE TABLE v1log(a,b,c,d,e,f);
+    CREATE TRIGGER r1 INSTEAD OF DELETE ON v1 BEGIN
+      INSERT INTO v1log VALUES(OLD.x,NULL,OLD.y,NULL,OLD.z,NULL);
+    END;
+    DELETE FROM v1 WHERE x=1;
+    SELECT * FROM v1log;
+  
+
+
+    DELETE FROM v1 WHERE x=3;
+    SELECT * FROM v1log;
+  
+
+
+    INSERT INTO t1 VALUES(4,5,6);
+    DELETE FROM v1log;
+    DELETE FROM v1 WHERE y=11;
+    SELECT * FROM v1log;
+  
+
+
+    CREATE TRIGGER r2 INSTEAD OF INSERT ON v1 BEGIN
+      INSERT INTO v1log VALUES(NULL,NEW.x,NULL,NEW.y,NULL,NEW.z);
+    END;
+    DELETE FROM v1log;
+    INSERT INTO v1 VALUES(1,2,3);
+    SELECT * FROM v1log;
+  
+
+
+    CREATE TRIGGER r3 INSTEAD OF UPDATE ON v1 BEGIN
+      INSERT INTO v1log VALUES(OLD.x,NEW.x,OLD.y,NEW.y,OLD.z,NEW.z);
+    END;
+    DELETE FROM v1log;
+    UPDATE v1 SET x=x+100, y=y+200, z=z+300;
+    SELECT * FROM v1log;
+  

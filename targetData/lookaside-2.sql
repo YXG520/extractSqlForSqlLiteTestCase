@@ -1,0 +1,8 @@
+
+
+CREATE TABLE t2(x);
+
+SELECT 1
+
+
+

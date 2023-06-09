@@ -1,0 +1,67 @@
+
+SELECT DISTINCT log FROM t1 ORDER BY log
+
+SELECT DISTINCT log FROM t1
+
+SELECT n FROM t1 WHERE log=3
+
+
+    SELECT DISTINCT log FROM t1
+    UNION ALL
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY log;
+  
+
+
+    CREATE TABLE t2 AS
+      SELECT DISTINCT log FROM t1
+      UNION ALL
+      SELECT n FROM t1 WHERE log=3
+      ORDER BY log;
+    SELECT * FROM t2;
+  
+DROP TABLE t2
+
+
+    CREATE TABLE t2 AS
+      SELECT DISTINCT log FROM t1
+      UNION ALL
+      SELECT n FROM t1 WHERE log=3
+      ORDER BY log DESC;
+    SELECT * FROM t2;
+  
+DROP TABLE t2
+
+
+    SELECT DISTINCT log FROM t1
+    UNION ALL
+    SELECT n FROM t1 WHERE log=2
+  
+
+
+    CREATE TABLE t2 AS 
+      SELECT DISTINCT log FROM t1
+      UNION ALL
+      SELECT n FROM t1 WHERE log=2;
+    SELECT * FROM t2;
+  
+DROP TABLE t2
+
+
+      SELECT log FROM t1 WHERE n IN 
+        (SELECT DISTINCT log FROM t1 UNION ALL
+         SELECT n FROM t1 WHERE log=3)
+      ORDER BY log;
+    
+
+
+    SELECT DISTINCT log FROM t1 ORDER BY log
+    UNION ALL
+    SELECT n FROM t1 WHERE log=3
+    ORDER BY log;
+  
+
+
+  SELECT (VALUES(0) INTERSECT SELECT(0) UNION SELECT(0) ORDER BY 1 UNION
+          SELECT 0 UNION SELECT 0 ORDER BY 1);
+

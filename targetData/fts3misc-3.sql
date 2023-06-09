@@ -1,0 +1,18 @@
+
+
+  CREATE VIRTUAL TABLE t3 USING fts3;
+  INSERT INTO t3 VALUES('a b c');
+  INSERT INTO t3 VALUES('d e f');
+  INSERT INTO t3 VALUES('a b d');
+  INSERT INTO t3 VALUES('1 2 3 4 5 6 7 8 9 10 11');
+
+
+
+
+
+  SELECT * FROM t3 WHERE t3 MATCH '"a* b* x* a*"'
+
+
+
+  SELECT rowid FROM t3 WHERE t3 MATCH '"2 3 4 5 6 7 8 9"'
+

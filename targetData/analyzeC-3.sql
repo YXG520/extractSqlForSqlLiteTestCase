@@ -1,0 +1,26 @@
+
+
+  UPDATE sqlite_stat1 SET stat='12345 2 whatever=5 unordered xyzzy=11'
+   WHERE idx='t1a';
+  ANALYZE sqlite_master;
+  SELECT *, '#' FROM t1 WHERE a BETWEEN 3 AND 8 ORDER BY c;
+
+
+
+  EXPLAIN QUERY PLAN
+  SELECT *, '#' FROM t1 WHERE a BETWEEN 3 AND 8 ORDER BY c;
+
+
+
+  SELECT c FROM t1 ORDER BY a;
+
+
+
+  EXPLAIN QUERY PLAN
+  SELECT c FROM t1 ORDER BY a;
+
+
+
+  EXPLAIN QUERY PLAN
+  SELECT c FROM t1 ORDER BY a;
+

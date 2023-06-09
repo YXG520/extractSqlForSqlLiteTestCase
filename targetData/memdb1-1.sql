@@ -1,0 +1,38 @@
+
+
+    CREATE TABLE t1(a,b);
+    INSERT INTO t1 VALUES(1,2);
+  
+
+
+  SELECT * FROM t1;
+
+
+
+  PRAGMA auto_vacuum = off;
+  VACUUM;
+
+
+
+  CREATE TABLE t2(x, y);
+  WITH RECURSIVE c(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM c WHERE x<100)
+   INSERT INTO t2(x, y) SELECT x, randomblob(1000) FROM c;
+  DROP TABLE t2;
+  PRAGMA page_count;
+
+
+
+  VACUUM;
+  PRAGMA page_count;
+
+
+
+SELECT * FROM t1
+
+INSERT INTO t1 VALUES(3,4);
+
+SELECT * FROM t1
+
+INSERT INTO t1 VALUES(3,4); SELECT * FROM t1
+
+INSERT INTO t1 VALUES(5,randomblob(100000))

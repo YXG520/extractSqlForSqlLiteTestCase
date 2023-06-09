@@ -1,0 +1,8 @@
+
+BEGIN
+CREATE TABLE tbl$i (a, b, c)
+COMMIT
+
+BEGIN
+DROP TABLE tbl$i
+COMMIT

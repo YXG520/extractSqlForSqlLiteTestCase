@@ -1,0 +1,20 @@
+
+
+  CREATE TABLE IF NOT EXISTS t0(c0);
+  INSERT INTO t0(c0) VALUES (-9223372036854775808);
+  BEGIN;
+
+
+
+  CREATE INDEX i0 ON t0(ABS(c0));
+
+
+
+  COMMIT;
+  SELECT sql FROM sqlite_master WHERE tbl_name = 't0';
+  CREATE INDEX i0 ON t0(c0);
+
+
+
+  REINDEX;
+

@@ -1,0 +1,49 @@
+
+
+  CREATE TABLE t1_a(a INTEGER PRIMARY KEY, b TEXT);
+  CREATE TABLE t1_b(c INTEGER PRIMARY KEY, d TEXT);
+  CREATE TABLE t1_c(e INTEGER PRIMARY KEY, f TEXT);
+
+  INSERT INTO t1_a VALUES(1, 'one'), (4, 'four');
+  INSERT INTO t1_b VALUES(2, 'two'), (5, 'five');
+  INSERT INTO t1_c VALUES(3, 'three'), (6, 'six');
+
+  CREATE VIEW t1 AS 
+    SELECT a, b FROM t1_a   UNION ALL
+    SELECT c, d FROM t1_b   UNION ALL
+    SELECT e, f FROM t1_c;
+
+  CREATE TABLE i1(x);
+  INSERT INTO i1 VALUES(2), (5), (6), (1);
+
+
+
+  SELECT a, b FROM (
+    SELECT a, b FROM t1_a   UNION ALL
+    SELECT c, d FROM t1_b   UNION ALL
+    SELECT e, f FROM t1_c
+  ) ORDER BY a
+
+
+
+  SELECT a, b FROM t1 ORDER BY a
+
+
+
+  SELECT a, b FROM i1, t1 WHERE a=x ORDER BY a
+
+
+
+  CREATE TABLE t0(c0 INT);
+  INSERT INTO t0 VALUES(0);
+  CREATE TABLE t1_a(a INTEGER PRIMARY KEY, b TEXT);
+  INSERT INTO t1_a VALUES(1,'one');
+  CREATE TABLE t1_b(c INTEGER PRIMARY KEY, d TEXT);
+  INSERT INTO t1_b VALUES(2,'two');
+  CREATE VIEW t1 AS SELECT a, b FROM t1_a UNION ALL SELECT c, c FROM t1_b;
+  SELECT * FROM (SELECT t1.a, t1.b AS b, t0.c0 FROM t0, t1);
+
+
+
+  SELECT * FROM (SELECT t1.a, t1.b AS b, t0.c0 FROM t0, t1) WHERE b=2;
+

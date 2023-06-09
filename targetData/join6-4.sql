@@ -1,0 +1,17 @@
+
+
+      SELECT * FROM
+         (SELECT 1 AS a, 91 AS x, 92 AS y UNION SELECT 2, 93, 94)
+         NATURAL JOIN t2 NATURAL JOIN t3
+    
+
+
+      SELECT * FROM t1 NATURAL JOIN
+         (SELECT 3 AS b, 92 AS y, 93 AS z UNION SELECT 4, 94, 95)
+         NATURAL JOIN t3
+    
+
+
+      SELECT * FROM t1 NATURAL JOIN t2 NATURAL JOIN
+         (SELECT 5 AS c, 91 AS x, 93 AS z UNION SELECT 6, 99, 95)
+    

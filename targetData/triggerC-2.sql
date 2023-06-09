@@ -1,0 +1,44 @@
+
+
+    CREATE TABLE t2(a PRIMARY KEY);
+  
+
+ DROP TRIGGER t2_trig 
+ DELETE FROM t2 
+
+      INSERT INTO t2 VALUES(10);
+      SELECT * FROM t2 ORDER BY rowid;
+    
+
+
+    CREATE TABLE t22(x);
+
+    CREATE TRIGGER t22a AFTER INSERT ON t22 BEGIN
+      INSERT INTO t22 SELECT x + (SELECT max(x) FROM t22) FROM t22;
+    END;
+    CREATE TRIGGER t22b BEFORE INSERT ON t22 BEGIN
+      SELECT CASE WHEN (SELECT count(*) FROM t22) >= [expr $SQLITE_MAX_TRIGGER_DEPTH / 2]
+                  THEN RAISE(IGNORE)
+                  ELSE NULL END;
+    END;
+
+    INSERT INTO t22 VALUES(1);
+    SELECT count(*) FROM t22;
+  
+
+
+    CREATE TABLE t23(x PRIMARY KEY);
+
+    CREATE TRIGGER t23a AFTER INSERT ON t23 BEGIN
+      INSERT INTO t23 VALUES(new.x + 1);
+    END;
+
+    CREATE TRIGGER t23b BEFORE INSERT ON t23 BEGIN
+      SELECT CASE WHEN new.x>[expr $SQLITE_MAX_TRIGGER_DEPTH / 2]
+                  THEN RAISE(IGNORE)
+                  ELSE NULL END;
+    END;
+
+    INSERT INTO t23 VALUES(1);
+    SELECT count(*) FROM t23;
+  

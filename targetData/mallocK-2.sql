@@ -1,0 +1,6 @@
+
+
+    CREATE TABLE t1(a,b);
+  
+SELECT * FROM t1 WHERE a BETWEEN 5 AND 10
+ AND b=$x

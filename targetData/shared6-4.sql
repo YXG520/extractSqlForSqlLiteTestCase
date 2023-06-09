@@ -1,0 +1,5 @@
+
+SELECT * FROM t1
+ CREATE TABLE t5(a, b) 
+
+

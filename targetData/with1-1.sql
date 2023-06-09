@@ -1,0 +1,21 @@
+
+
+  CREATE TABLE t1(x INTEGER, y INTEGER);
+  WITH x(a) AS ( SELECT * FROM t1) SELECT 10
+
+
+
+  SELECT * FROM ( WITH x AS ( SELECT * FROM t1) SELECT 10 );
+
+
+
+  WITH x(a) AS ( SELECT * FROM t1) INSERT INTO t1 VALUES(1,2);
+
+
+
+  WITH x(a) AS ( SELECT * FROM t1) DELETE FROM t1;
+
+
+
+  WITH x(a) AS ( SELECT * FROM t1) UPDATE t1 SET x = y;
+

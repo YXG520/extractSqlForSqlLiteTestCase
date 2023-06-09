@@ -1,0 +1,210 @@
+
+
+    INSERT INTO t1 VALUES(1,2,3);
+    BEGIN TRANSACTION;
+    DROP TABLE t1;
+    CREATE TABLE t1(p,q,r);
+    ROLLBACK;
+    SELECT * FROM t1;
+  
+
+
+    INSERT INTO t1 VALUES(1,2,3);
+    BEGIN TRANSACTION;
+    DROP TABLE t1;
+    CREATE TABLE t1(p,q,r);
+    COMMIT;
+    SELECT * FROM t1;
+  
+
+
+    INSERT INTO t1 VALUES(1,2,3);
+    SELECT * FROM t1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP TABLE t1;
+    CREATE TABLE t1(a,b,c);
+    INSERT INTO t1 VALUES(4,5,6);
+    SELECT * FROM t1;
+    DROP TABLE t1;
+  
+
+
+    ROLLBACK;
+    SELECT * FROM t1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP TABLE t1;
+    CREATE TABLE t1(a,b,c);
+    INSERT INTO t1 VALUES(4,5,6);
+    SELECT * FROM t1;
+    DROP TABLE t1;
+  
+
+
+    COMMIT;
+    SELECT * FROM t1;
+  
+
+
+    CREATE TABLE t1(a unique,b,c);
+    INSERT INTO t1 VALUES(1,2,3);
+    BEGIN TRANSACTION;
+    DROP TABLE t1;
+    CREATE TABLE t1(p unique,q,r);
+    ROLLBACK;
+    SELECT * FROM t1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP TABLE t1;
+    CREATE TABLE t1(p unique,q,r);
+    COMMIT;
+    SELECT * FROM t1;
+  
+
+
+    INSERT INTO t1 VALUES(1,2,3);
+    SELECT * FROM t1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP TABLE t1;
+    CREATE TABLE t1(a unique,b,c);
+    INSERT INTO t1 VALUES(4,5,6);
+    SELECT * FROM t1;
+    DROP TABLE t1;
+  
+
+
+    ROLLBACK;
+    SELECT * FROM t1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP TABLE t1;
+    CREATE TABLE t1(a unique,b,c);
+    INSERT INTO t1 VALUES(4,5,6);
+    SELECT * FROM t1;
+    DROP TABLE t1;
+  
+
+
+    COMMIT;
+    SELECT * FROM t1;
+  
+
+
+    CREATE TABLE t1(a integer primary key,b,c);
+    INSERT INTO t1 VALUES(1,-2,-3);
+    INSERT INTO t1 VALUES(4,-5,-6);
+    SELECT * FROM t1;
+  
+
+
+    CREATE INDEX i1 ON t1(b);
+    SELECT * FROM t1 WHERE b<1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP INDEX i1;
+    SELECT * FROM t1 WHERE b<1;
+    ROLLBACK;
+  
+
+
+    SELECT * FROM t1 WHERE b<1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP TABLE t1;
+    ROLLBACK;
+    SELECT * FROM t1 WHERE b<1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP INDEX i1;
+    CREATE INDEX i1 ON t1(c);
+    SELECT * FROM t1 WHERE b<1;
+  
+
+
+    SELECT * FROM t1 WHERE c<1;
+  
+
+
+    ROLLBACK;
+    SELECT * FROM t1 WHERE b<1;
+  
+
+
+    SELECT * FROM t1 WHERE c<1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP TABLE t1;
+    CREATE TABLE t1(a int unique,b,c);
+    COMMIT;
+    INSERT INTO t1 VALUES(1,-2,-3);
+    INSERT INTO t1 VALUES(4,-5,-6);
+    SELECT * FROM t1 ORDER BY a;
+  
+
+
+    CREATE INDEX i1 ON t1(b);
+    SELECT * FROM t1 WHERE b<1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP INDEX i1;
+    SELECT * FROM t1 WHERE b<1;
+    ROLLBACK;
+  
+
+
+    SELECT * FROM t1 WHERE b<1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP TABLE t1;
+    ROLLBACK;
+    SELECT * FROM t1 WHERE b<1;
+  
+
+
+    BEGIN TRANSACTION;
+    DROP INDEX i1;
+    CREATE INDEX i1 ON t1(c);
+    SELECT * FROM t1 WHERE b<1;
+  
+
+
+    SELECT * FROM t1 WHERE c<1;
+  
+
+
+    DROP INDEX i1;
+    SELECT * FROM t1 WHERE c<1;
+  
+
+
+    ROLLBACK;
+    SELECT * FROM t1 WHERE b<1;
+  
+
+
+    SELECT * FROM t1 WHERE c<1;
+  

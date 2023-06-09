@@ -1,0 +1,5 @@
+
+CREATE TABLE t${N}(x);
+INSERT INTO t$N VALUES($N)
+SELECT * FROM t1
+, t$i

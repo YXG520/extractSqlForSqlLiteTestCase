@@ -1,0 +1,18 @@
+
+
+  CREATE TABLE t1(a,b,c,d,e,f,g,h,PRIMARY KEY(a,b,c)) WITHOUT ROWID;
+  CREATE TABLE t2(i, j);
+  INSERT INTO t2 VALUES(10, 20);
+
+
+
+  SELECT (d IS NULL) FROM t1 RIGHT JOIN t2 ON (j=33);
+
+
+
+  CREATE INDEX i1 ON t1( (d IS NULL), d );
+
+
+
+  SELECT (d IS NULL) FROM t1 RIGHT JOIN t2 ON (j=33);
+

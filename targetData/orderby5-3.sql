@@ -1,0 +1,15 @@
+
+
+  CREATE TABLE t3(a INTEGER PRIMARY KEY, b, c, d, e, f);
+  CREATE INDEX t3bcde ON t3(b, c, d, e);
+  EXPLAIN QUERY PLAN
+  SELECT a FROM t3 WHERE b=2 AND c=3 ORDER BY d DESC, e DESC, b, c, a DESC;
+
+
+
+  DROP TABLE t3;
+  CREATE TABLE t3(a INTEGER PRIMARY KEY, b, c, d, e, f) WITHOUT rowid;
+  CREATE INDEX t3bcde ON t3(b, c, d, e);
+  EXPLAIN QUERY PLAN
+  SELECT a FROM t3 WHERE b=2 AND c=3 ORDER BY d DESC, e DESC, b, c, a DESC;
+

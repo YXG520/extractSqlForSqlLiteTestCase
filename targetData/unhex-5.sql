@@ -1,0 +1,4 @@
+
+
+    SELECT hex( unhex($hex, ' -') );
+  

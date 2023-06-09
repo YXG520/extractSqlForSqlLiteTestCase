@@ -1,0 +1,23 @@
+
+
+  CREATE TABLE t9(a INTEGER PRIMARY KEY);
+  INSERT INTO t9 VALUES (44), (45);
+
+
+
+  SELECT * FROM t9 WHERE a IN (44, 45, 44, 45)
+
+
+
+  CREATE TABLE t0(c0);
+  CREATE VIEW v0(c0) AS SELECT LOWER(CAST('1e500' AS TEXT)) FROM t0;
+  INSERT INTO t0(c0) VALUES (NULL);
+
+
+
+  SELECT lower('1e500') FROM t0 WHERE rowid NOT IN (0, 0, lower('1e500'));
+
+
+
+  SELECT lower('1e500') FROM t0 WHERE rowid != lower('1e500');
+

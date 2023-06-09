@@ -1,0 +1,23 @@
+
+
+  CREATE TABLE t6a(a INTEGER PRIMARY KEY, b);
+  INSERT INTO t6a VALUES(1,2),(3,4),(5,6);
+  CREATE TABLE t6b(c INTEGER PRIMARY KEY, d);
+  INSERT INTO t6b VALUES(4,44),(5,55),(6,66);
+
+  SELECT * FROM t6a, t6b WHERE a=3 AND b IN (c);
+
+
+
+  EXPLAIN QUERY PLAN
+  SELECT * FROM t6a, t6b WHERE a=3 AND b IN (c);
+
+
+
+  SELECT * FROM t6a, t6b WHERE a=3 AND c IN (b);
+
+
+
+  EXPLAIN QUERY PLAN
+  SELECT * FROM t6a, t6b WHERE a=3 AND c IN (b);
+

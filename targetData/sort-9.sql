@@ -1,0 +1,33 @@
+
+
+    CREATE TABLE t6(x, y);
+    INSERT INTO t6 VALUES(1,1);
+    INSERT INTO t6 VALUES(2,'1');
+    INSERT INTO t6 VALUES(3,x'31');
+    INSERT INTO t6 VALUES(4,NULL);
+    SELECT x FROM t6 ORDER BY y;
+  
+
+
+    SELECT x FROM t6 ORDER BY y DESC;
+  
+
+
+    SELECT x FROM t6 WHERE y<1
+  
+
+
+    SELECT x FROM t6 WHERE y<'1'
+  
+
+
+    SELECT x FROM t6 WHERE y<x'31'
+  
+
+
+    SELECT x FROM t6 WHERE y>1
+  
+
+
+    SELECT x FROM t6 WHERE y>'1'
+  

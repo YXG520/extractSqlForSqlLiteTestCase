@@ -1,0 +1,16 @@
+
+
+  INSERT INTO t1 VALUES(7)
+
+
+
+  INSERT INTO t1 VALUES(8)
+
+
+
+  INSERT INTO t1 VALUES(9)
+
+
+
+  SELECT * FROM t1
+

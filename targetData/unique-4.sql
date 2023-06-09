@@ -1,0 +1,35 @@
+
+
+    CREATE TABLE t4(a UNIQUE, b, c, UNIQUE(b,c));
+    INSERT INTO t4 VALUES(1,2,3);
+    INSERT INTO t4 VALUES(NULL, 2, NULL);
+    SELECT * FROM t4;
+  
+
+
+    INSERT INTO t4 VALUES(NULL, 3, 4);
+  
+
+
+    SELECT * FROM t4
+  
+
+
+    INSERT INTO t4 VALUES(2, 2, NULL);
+  
+
+
+    SELECT * FROM t4
+  
+
+
+    INSERT INTO t4 VALUES(NULL, 2, NULL);
+  
+
+SELECT * FROM t4
+
+CREATE UNIQUE INDEX i4a ON t4(a,b)
+
+CREATE UNIQUE INDEX i4b ON t4(a,b,c)
+
+CREATE UNIQUE INDEX i4c ON t4(b)

@@ -1,0 +1,6 @@
+
+SELECT * FROM t1, t2
+
+
+SELECT * FROM t1, t2
+

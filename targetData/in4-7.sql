@@ -1,0 +1,22 @@
+
+
+  CREATE TABLE t1(a, b, c);
+  CREATE TABLE t2(d, e);
+  CREATE INDEX t1bc ON t1(c, b);
+  INSERT INTO t2(e) VALUES(1);
+  INSERT INTO t1 VALUES(NULL, NULL, NULL);
+
+
+
+  SELECT * FROM t2 LEFT JOIN t1 ON c = d AND b IN (10,10,10);
+
+
+
+    CREATE VIRTUAL TABLE t1 USING rtree(a, b, c);
+    CREATE TABLE t2(d INTEGER, e INT);
+    INSERT INTO t2(e) VALUES(1);
+  
+
+
+    SELECT * FROM t2 LEFT JOIN t1 ON c IN (d) AND b IN (10,10,10);
+  

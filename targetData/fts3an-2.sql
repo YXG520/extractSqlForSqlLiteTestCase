@@ -1,0 +1,10 @@
+
+SELECT rowid FROM t2 WHERE t2 MATCH 'lorem'
+
+SELECT rowid FROM t2 WHERE t2 MATCH 'lore*'
+
+SELECT rowid FROM t2 WHERE t2 MATCH 'lo*'
+
+SELECT rowid FROM t2 WHERE t2 MATCH 'l*'
+
+SELECT rowid FROM t2 WHERE t2 MATCH 'lov*'

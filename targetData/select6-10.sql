@@ -1,0 +1,42 @@
+
+
+  CREATE TABLE t(i,j,k);
+  CREATE TABLE j(l,m);
+  CREATE TABLE k(o);
+
+
+
+  SELECT * FROM (SELECT * FROM t), j;
+
+
+
+  SELECT * FROM t UNION ALL SELECT * FROM j
+
+
+
+  SELECT * FROM (SELECT i FROM t UNION ALL SELECT l, m FROM j)
+
+
+
+  SELECT * FROM (SELECT j FROM t UNION ALL SELECT * FROM j)
+
+
+
+  SELECT * FROM (SELECT * FROM t UNION ALL SELECT * FROM j)
+
+
+
+  SELECT * FROM (
+    SELECT * FROM t UNION ALL 
+    SELECT l,m,l FROM j UNION ALL
+    SELECT * FROM k
+  )
+
+
+
+  SELECT * FROM (
+    SELECT * FROM k UNION ALL
+    SELECT * FROM t UNION ALL 
+    SELECT l,m,l FROM j 
+  )
+

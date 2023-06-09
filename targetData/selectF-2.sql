@@ -1,0 +1,7 @@
+
+
+  SELECT * FROM t2
+  UNION ALL 
+  SELECT * FROM t1 WHERE a<5 
+  ORDER BY 2, 1
+

@@ -1,0 +1,4 @@
+
+
+
+ DELETE FROM t1 

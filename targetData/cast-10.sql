@@ -1,0 +1,44 @@
+
+
+  VALUES(CAST(44 AS REAL)),(55);
+
+
+
+  SELECT CAST(44 AS REAL) AS 'm' UNION ALL SELECT 55;
+
+
+
+  SELECT * FROM (VALUES(CAST(44 AS REAL)),(55));
+
+
+
+  SELECT * FROM (SELECT CAST(44 AS REAL) AS 'm' UNION ALL SELECT 55);
+
+
+
+  SELECT * FROM dual CROSS JOIN (VALUES(CAST(44 AS REAL)),(55));
+
+
+
+  SELECT * FROM dual CROSS JOIN (SELECT CAST(44 AS REAL) AS 'm'
+                                 UNION ALL SELECT 55);
+
+
+
+    DROP VIEW v1;
+    CREATE VIEW v1 AS SELECT CAST(44 AS REAL) AS 'm' UNION ALL SELECT 55;
+    SELECT name, type FROM pragma_table_info('v1');
+  
+
+
+    CREATE VIEW v2 AS VALUES(CAST(44 AS REAL)),(55);
+    SELECT type FROM pragma_table_info('v2');
+  
+
+
+    SELECT * FROM v1;
+  
+
+
+    SELECT * FROM v2;
+  

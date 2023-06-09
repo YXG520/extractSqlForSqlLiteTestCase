@@ -1,0 +1,7 @@
+
+ SELECT * FROM t6 ORDER BY a 
+
+ SELECT * FROM t7 ORDER BY a 
+
+ SELECT * FROM t8 
+

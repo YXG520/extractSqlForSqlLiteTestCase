@@ -1,0 +1,98 @@
+
+
+      CREATE TABLE t1(a,b,c);
+      INSERT INTO t1 VALUES(1,2,3);
+      INSERT INTO t1 VALUES(2,12345678901234,-1234567890);
+      INSERT INTO t1 VALUES(3,-2,-5);
+    
+SELECT abs(a,b) FROM t1
+
+
+      CREATE TABLE t1(a,b,c);
+      INSERT INTO t1 VALUES(1,2,3);
+      INSERT INTO t1 VALUES(2,1.2345678901234,-12345.67890);
+      INSERT INTO t1 VALUES(3,-2,-5);
+    
+SELECT abs(a,b) FROM t1
+
+SELECT abs() FROM t1
+
+SELECT abs(b) FROM t1 ORDER BY a
+
+SELECT abs(c) FROM t1 ORDER BY a
+
+SELECT abs(b) FROM t1 ORDER BY a
+
+SELECT abs(c) FROM t1 ORDER BY a
+
+SELECT abs(a) FROM t2
+
+SELECT abs(t1) FROM tbl1
+
+SELECT round(a,b,c) FROM t1
+
+SELECT round(b,2) FROM t1 ORDER BY b
+
+SELECT round(b,0) FROM t1 ORDER BY a
+
+SELECT round(c) FROM t1 ORDER BY a
+
+SELECT round(c,a) FROM t1 ORDER BY a
+
+SELECT 'x' || round(c,a) || 'y' FROM t1 ORDER BY a
+
+SELECT round() FROM t1 ORDER BY a
+
+SELECT coalesce(round(a,2),'nil') FROM t2
+
+SELECT round(t1,2) FROM tbl1
+
+SELECT typeof(round(5.1,1));
+
+SELECT typeof(round(5.1));
+
+SELECT round(b,2.0) FROM t1 ORDER BY b
+
+SELECT round($x1);
+
+SELECT round($x1,1);
+
+SELECT round(40223.4999999999);
+
+SELECT round(40224.4999999999);
+
+SELECT round(40225.4999999999);
+
+SELECT round(40223.4999999999,$i);
+
+SELECT round(40224.4999999999,$i);
+
+SELECT round(40225.4999999999,$i);
+
+SELECT round(40223.4999999999,$i);
+
+SELECT round(40224.4999999999,$i);
+
+SELECT round(40225.4999999999,$i);
+
+SELECT round(1234567890.5);
+
+SELECT round(12345678901.5);
+
+SELECT round(123456789012.5);
+
+SELECT round(1234567890123.5);
+
+SELECT round(12345678901234.5);
+
+SELECT round(1234567890123.35,1);
+
+SELECT round(1234567890123.445,2);
+
+SELECT round(99999999999994.5);
+
+SELECT round(9999999999999.55,1);
+
+SELECT round(9999999999999.556,2);
+
+SELECT round(1e500), round(-1e500);

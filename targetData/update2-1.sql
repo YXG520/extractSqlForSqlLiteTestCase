@@ -1,0 +1,33 @@
+
+
+  CREATE TABLE t1(a INTEGER PRIMARY KEY, b);
+  CREATE TABLE t2(a INTEGER PRIMARY KEY, b);
+  WITH s(i) AS ( SELECT 0 UNION ALL SELECT i+1 FROM s WHERE i<$nrow )
+  INSERT INTO t1(b) SELECT char((i % 26) + 65) FROM s;
+  INSERT INTO t2 SELECT * FROM t1;
+
+
+
+  UPDATE t1 SET b = repeat(b, 100)
+
+
+
+  SELECT * FROM t1;
+
+ SELECT a, repeat(b, 100) FROM t2 
+
+
+  DROP TABLE t1;
+  CREATE TABLE t1(a INT PRIMARY KEY, b) WITHOUT ROWID;
+  WITH s(i) AS ( SELECT 0 UNION ALL SELECT i+1 FROM s WHERE i<$nrow )
+  INSERT INTO t1(a, b) SELECT i+1, char((i % 26) + 65) FROM s;
+
+
+
+  UPDATE t1 SET b = repeat(b, 100)
+
+
+
+  SELECT * FROM t1;
+
+ SELECT a, repeat(b, 100) FROM t2 

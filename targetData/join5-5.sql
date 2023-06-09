@@ -1,0 +1,27 @@
+
+
+  CREATE TABLE y1(x, y, z);
+  INSERT INTO y1 VALUES(0, 0, 1);
+  CREATE TABLE y2(a);
+
+
+
+  SELECT count(z) FROM y1 LEFT JOIN y2 ON x GROUP BY y;
+
+
+
+  SELECT count(z) FROM ( SELECT * FROM y1 ) LEFT JOIN y2 ON x GROUP BY y;
+
+
+
+  CREATE VIEW v1 AS SELECT x, y, z FROM y1;
+  SELECT count(z) FROM v1 LEFT JOIN y2 ON x GROUP BY y;
+
+
+
+  SELECT count(z) FROM ( SELECT * FROM y1 ) LEFT JOIN y2 ON x
+
+
+
+  SELECT * FROM ( SELECT * FROM y1 ) LEFT JOIN y2 ON x
+

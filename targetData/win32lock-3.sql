@@ -1,0 +1,28 @@
+
+
+    CREATE TABLE t1(x);
+    INSERT INTO t1 VALUES(1);
+    INSERT INTO t1 VALUES(2);
+    INSERT INTO t1 VALUES(3);
+  
+
+
+    BEGIN EXCLUSIVE;
+    INSERT INTO t1 VALUES(4);
+  
+
+
+    BEGIN EXCLUSIVE;
+    INSERT INTO t1 VALUES(5);
+    COMMIT;
+  
+
+
+    COMMIT;
+  
+
+
+    BEGIN EXCLUSIVE;
+    INSERT INTO t1 VALUES(6);
+    COMMIT;
+  

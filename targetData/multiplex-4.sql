@@ -1,0 +1,18 @@
+
+CREATE TABLE t2(x); INSERT INTO t2 VALUES('tab-t2');
+
+SELECT * FROM t2
+
+INSERT INTO t2 VALUES(zeroblob(200000))
+
+SELECT count(*) FROM t2
+
+ DELETE FROM t2 WHERE x = 'tab-t2' 
+
+SELECT count(*) FROM t2
+
+INSERT INTO t2 VALUES(zeroblob(200000))
+
+
+
+

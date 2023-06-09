@@ -1,0 +1,11 @@
+
+UPDATE t1 SET a=0 WHERE 0
+UPDATE t1 SET a=0
+
+UPDATE t1 SET a=0
+
+UPDATE t1 SET a=0
+ROLLBACK
+
+  db2 eval $sql
+

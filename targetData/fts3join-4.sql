@@ -1,0 +1,7 @@
+
+
+  CREATE VIRTUAL TABLE ft4 USING fts3(x);
+  CREATE TABLE t4(y, z);
+  CREATE INDEX t4y ON t1(y);
+
+

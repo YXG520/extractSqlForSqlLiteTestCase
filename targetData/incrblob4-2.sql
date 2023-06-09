@@ -1,0 +1,6 @@
+
+
+
+ DELETE FROM t1 WHERE k=10 
+ DELETE FROM t1 WHERE k=9 
+ INSERT INTO t1(v) VALUES($new) 

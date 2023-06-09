@@ -1,0 +1,28 @@
+
+
+  CREATE TABLE t0(c0);
+  CREATE INDEX i0 ON t0(c0) WHERE c0 NOT NULL;
+  INSERT INTO t0(c0) VALUES (NULL);
+
+
+
+  SELECT * FROM t0 WHERE ~('' BETWEEN t0.c0 AND TRUE);
+
+
+
+  SELECT ~('' BETWEEN t0.c0 AND TRUE) FROM t0;
+
+
+SELECT * FROM t0 WHERE $expr ORDER BY c0
+ {
+
+} 
+
+SELECT ($expr) IS TRUE FROM t0
+ 1 
+
+
+  CREATE TABLE t1(a, b);
+  INSERT INTO t1 VALUES(1, 2), (3, 4);
+  CREATE TABLE t2(x, y);
+

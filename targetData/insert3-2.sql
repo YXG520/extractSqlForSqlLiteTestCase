@@ -1,0 +1,24 @@
+
+
+    CREATE TABLE t2(
+      a INTEGER PRIMARY KEY,
+      b DEFAULT 'b',
+      c DEFAULT 'c'
+    );
+    CREATE TABLE t2dup(a,b,c);
+    CREATE TRIGGER t2r1 BEFORE INSERT ON t2 BEGIN
+      INSERT INTO t2dup(a,b,c) VALUES(new.a,new.b,new.c);
+    END;
+    INSERT INTO t2(a) VALUES(123);
+    INSERT INTO t2(b) VALUES(234);
+    INSERT INTO t2(c) VALUES(345);
+    SELECT * FROM t2dup;
+  
+
+
+    DELETE FROM t2dup;
+    INSERT INTO t2(a) SELECT 1 FROM t1 LIMIT 1;
+    INSERT INTO t2(b) SELECT 987 FROM t1 LIMIT 1;
+    INSERT INTO t2(c) SELECT 876 FROM t1 LIMIT 1;
+    SELECT * FROM t2dup;
+  

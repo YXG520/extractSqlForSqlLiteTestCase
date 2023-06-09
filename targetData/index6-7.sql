@@ -1,0 +1,28 @@
+
+
+  CREATE TABLE t7a(x);
+  CREATE TABLE t7b(y);
+  INSERT INTO t7a(x) VALUES(1);
+  CREATE INDEX t7ax ON t7a(x) WHERE x=99;
+  PRAGMA automatic_index=OFF;
+  SELECT * FROM t7a LEFT JOIN t7b ON (x=99) ORDER BY x;
+
+
+
+  INSERT INTO t7b(y) VALUES(2);
+  SELECT * FROM t7a JOIN t7b ON (x=99) ORDER BY x;
+
+
+
+  INSERT INTO t7a(x) VALUES(99);
+  SELECT * FROM t7a LEFT JOIN t7b ON (x=99) ORDER BY x;
+
+
+
+  SELECT * FROM t7a JOIN t7b ON (x=99) ORDER BY x;
+
+
+
+  EXPLAIN QUERY PLAN
+  SELECT * FROM t7a JOIN t7b ON (x=99) ORDER BY x;
+

@@ -1,0 +1,16 @@
+
+
+  CREATE TABLE u9(a UNIQUE, b);
+  INSERT INTO u9 VALUES(NULL, 1);
+  INSERT INTO u9 VALUES(NULL, 2);
+
+
+ SELECT * FROM u9 WHERE a IS NULL  
+{
+
+} 2
+
+ SELECT * FROM u9 WHERE a IS $null 
+{
+
+} 2

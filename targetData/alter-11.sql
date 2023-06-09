@@ -1,0 +1,41 @@
+
+CREATE TABLE t11(%c6%c6)
+
+    ALTER TABLE t11 ADD COLUMN abc;
+  
+
+    ALTER TABLE t11 ADD COLUMN abc;
+  
+
+INSERT INTO t11 VALUES(1,2)
+SELECT %c6%c6 AS xyz, abc FROM t11
+
+CREATE TABLE t11b("%81%82%83" text)
+
+    ALTER TABLE t11b ADD COLUMN abc;
+  
+
+    ALTER TABLE t11b ADD COLUMN abc;
+  
+
+INSERT INTO t11b VALUES(3,4)
+SELECT %81%82%83 AS xyz, abc FROM t11b
+
+SELECT [%81%82%83] AS xyz, abc FROM t11b
+
+%81%82%83
+
+CREATE TABLE t11c(%81%82%83 text)
+
+    ALTER TABLE t11c ADD COLUMN abc;
+  
+
+    ALTER TABLE t11c ADD COLUMN abc;
+  
+
+INSERT INTO t11c VALUES(5,6)
+SELECT %81%82%83 AS xyz, abc FROM t11c
+
+SELECT [%81%82%83] AS xyz, abc FROM t11c
+
+%81%82%83

@@ -1,0 +1,12 @@
+
+ SAVEPOINT sp1 
+
+ ROLLBACK TO sp1 
+
+ RELEASE sp1 
+
+ SAVEPOINT sp1 
+
+ ROLLBACK TO sp1 
+
+ RELEASE sp1 

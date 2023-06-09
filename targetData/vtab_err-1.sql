@@ -1,0 +1,16 @@
+
+
+  BEGIN;
+  CREATE TABLE r(a PRIMARY KEY, b, c);
+  CREATE VIRTUAL TABLE e USING echo(r);
+  INSERT INTO e VALUES(1, 2, 3);
+  INSERT INTO e VALUES('a', 'b', 'c');
+  UPDATE e SET c = 10;
+  DELETE FROM e WHERE a = 'a';
+  COMMIT;
+  BEGIN;
+    CREATE TABLE r2(a, b, c);
+    INSERT INTO r2 SELECT * FROM e;
+    INSERT INTO e SELECT a||'x', b, c FROM r2;
+  COMMIT;
+

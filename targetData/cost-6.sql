@@ -1,0 +1,9 @@
+
+
+  CREATE TABLE t3(a INTEGER PRIMARY KEY, b, c);
+  CREATE INDEX t3i1 ON t3(b);
+  CREATE INDEX t3i2 ON t3(c);
+
+
+S
+Q

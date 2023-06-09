@@ -1,0 +1,8 @@
+
+
+    CREATE VIEW v12 AS SELECT a FROM t1 WHERE b=?
+  
+
+
+    CREATE VIEW v12(x) AS SELECT a FROM t1 WHERE b=?
+  

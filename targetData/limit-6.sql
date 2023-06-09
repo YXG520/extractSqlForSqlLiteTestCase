@@ -1,0 +1,38 @@
+
+
+    BEGIN;
+    CREATE TABLE t6(a);
+    INSERT INTO t6 VALUES(1);
+    INSERT INTO t6 VALUES(2);
+    INSERT INTO t6 SELECT a+2 FROM t6;
+    COMMIT;
+    SELECT * FROM t6;
+  
+
+
+    SELECT * FROM t6 LIMIT -1 OFFSET -1;
+  
+
+
+    SELECT * FROM t6 LIMIT 2 OFFSET -123;
+  
+
+
+    SELECT * FROM t6 LIMIT -432 OFFSET 2;
+  
+
+
+    SELECT * FROM t6 LIMIT -1
+  
+
+
+    SELECT * FROM t6 LIMIT -1 OFFSET 1
+  
+
+
+    SELECT * FROM t6 LIMIT 0
+  
+
+
+    SELECT * FROM t6 LIMIT 0 OFFSET 1
+  

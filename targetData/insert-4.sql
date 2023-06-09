@@ -1,0 +1,38 @@
+
+
+    CREATE TABLE t3(a,b,c);
+    INSERT INTO t3 VALUES(1+2+3,4,5);
+    SELECT * FROM t3;
+  
+
+INSERT INTO t3 VALUES((SELECT max(a) FROM t3)+1,5,6);
+SELECT max(a) FROM t3
+INSERT INTO t3 VALUES($maxa+1,5,6);
+
+    SELECT * FROM t3 ORDER BY a;
+  
+
+
+      INSERT INTO t3 VALUES((SELECT max(a) FROM t3)+1,t3.a,6);
+      SELECT * FROM t3 ORDER BY a;
+    
+
+INSERT INTO t3 VALUES((SELECT b FROM t3 WHERE a=0),6,7);
+SELECT b FROM t3 WHERE a = 0
+INSERT INTO t3 VALUES($b,6,7);
+
+    SELECT * FROM t3 ORDER BY a;
+  
+
+
+    SELECT b,c FROM t3 WHERE a IS NULL;
+  
+
+
+    INSERT INTO t3 VALUES(notafunc(2,3),2,3);
+  
+
+
+    INSERT INTO t3 VALUES(min(1,2,3),max(1,2,3),99);
+    SELECT * FROM t3 WHERE c=99;
+  

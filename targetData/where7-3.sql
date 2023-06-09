@@ -1,0 +1,29 @@
+
+
+  CREATE TABLE t301 (
+      c8 INTEGER PRIMARY KEY,
+      c6 INTEGER,
+      c4 INTEGER,
+      c7 INTEGER,
+      FOREIGN KEY (c4) REFERENCES series(c4)
+  );
+  CREATE INDEX t301_c6 on t301(c6);
+  CREATE INDEX t301_c4 on t301(c4);
+  CREATE INDEX t301_c7 on t301(c7);
+  
+  CREATE TABLE t302 (
+      c1 INTEGER PRIMARY KEY,
+      c8 INTEGER,
+      c5 INTEGER,
+      c3 INTEGER,
+      c2 INTEGER,
+      c4 INTEGER,
+      FOREIGN KEY (c8) REFERENCES t301(c8)
+  );
+  CREATE INDEX t302_c3 on t302(c3);
+  CREATE INDEX t302_c8_c3 on t302(c8, c3);
+  CREATE INDEX t302_c5 on t302(c5);
+
+
+S
+Q
